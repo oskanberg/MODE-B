@@ -1,0 +1,18 @@
+/*
+ * 
+ */
+package MediaLibrary.diagram.edit.helpers;
+
+/**
+ * @generated
+ */
+public class MediaLibraryBaseEditHelper extends org.eclipse.gmf.tooling.runtime.edit.helpers.GeneratedEditHelperBase {
+
+		
+		
+	
+	
+	
+	
+	
+	}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MediaLibrary:Ecosystem xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:MediaLibrary="MediaLibrary">
+  <libraries name="My Library">
+    <collections name="My Tunes" host="//@devices.0" syncedDevices="//@devices.0 //@devices.1">
+      <members xsi:type="MediaLibrary:MusicTrack" name="Tune #1" origin="//@mediaSources.3" duration="1999"/>
+      <members xsi:type="MediaLibrary:MusicTrack" name="Tune #2" origin="//@mediaSources.3" duration="53452"/>
+      <members xsi:type="MediaLibrary:MusicTrack" name="Tune #3" origin="//@mediaSources.3" duration="4626"/>
+    </collections>
+    <collections name="Misc." host="//@devices.1" syncedDevices="//@devices.1">
+      <members xsi:type="MediaLibrary:Video" name="Baby vid #1" origin="//@mediaSources.2"/>
+      <members xsi:type="MediaLibrary:Ebook" name="The Glass Bead Game" origin="//@mediaSources.1"/>
+      <members xsi:type="MediaLibrary:AudioBook" name="Tale of Two Cities" origin="//@mediaSources.0"/>
+    </collections>
+  </libraries>
+  <devices xsi:type="MediaLibrary:Smartphone" name="Martphone" hostOf="//@libraries.0/@collections.0" collections="//@libraries.0/@collections.0"/>
+  <devices xsi:type="MediaLibrary:Computer" name="My PC" hostOf="//@libraries.0/@collections.1" collections="//@libraries.0/@collections.0 //@libraries.0/@collections.1"/>
+  <mediaSources xsi:type="MediaLibrary:Store" name="Audible" contents="//@libraries.0/@collections.1/@members.2"/>
+  <mediaSources xsi:type="MediaLibrary:Store" name="Amazon" contents="//@libraries.0/@collections.1/@members.1"/>
+  <mediaSources xsi:type="MediaLibrary:ExternalSource" name="My HD" contents="//@libraries.0/@collections.1/@members.0" sourceType="HDD"/>
+  <mediaSources xsi:type="MediaLibrary:ExternalSource" name="Awesome Mixtape" contents="//@libraries.0/@collections.0/@members.2 //@libraries.0/@collections.0/@members.1 //@libraries.0/@collections.0/@members.0" sourceType="CASSETTE"/>
+</MediaLibrary:Ecosystem>

@@ -1,0 +1,103 @@
+@namespace(uri="MediaLibrary", prefix="MediaLibrary")
+
+package MediaLibrary;
+
+abstract class NamedElement {
+	attr String name;
+}
+
+@gmf.diagram
+class Ecosystem {
+	val Library[1..*] libraries;
+	val Device[1..*] devices;
+	val MediaSource[1..*] mediaSources;
+}
+
+@gmf.node(label="name")
+class Library extends NamedElement {
+	@gmf.compartment
+	val MediaCollection[*] collections;
+}
+
+@gmf.node(label="name")
+class MediaCollection extends NamedElement {
+	@gmf.compartment
+	val Artifact[1..*] members;
+	@gmf.link(target.decoration="arrow", style="dash", color="255,0,0", label.text="host")
+	ref Device[1]#hostOf host;
+	@gmf.link(target.decoration="arrow", style="dash", label.text="syncedDevice")
+	ref Device[1..*]#collections syncedDevices;
+}
+
+/***** Devices ****/
+
+@gmf.node(label="name")
+abstract class Device extends NamedElement {
+	ref MediaCollection[*]#host hostOf;
+	ref MediaCollection[*]#syncedDevices collections;
+}
+
+class Tablet extends Device {
+}
+class Computer extends Device {	
+}
+class Smartphone extends Device {
+}
+class EReader extends Device {
+	attr Boolean videoEnabled;
+	attr Boolean audioEnabled;
+}
+
+/***** Media Artifacts ****/
+
+// all media types inherit artifact
+@gmf.node(label="name")
+abstract class Artifact extends NamedElement {
+	@gmf.link(target.decoration="arrow", style="dot", color="50,200,0", label.text="origin")
+	ref MediaSource[1]#contents origin;
+}
+
+abstract class DurationArtifact extends Artifact {
+	// duration is in miliseconds
+	// on int64, that's max ~597h
+	attr int duration;
+}
+
+class AudioBook extends DurationArtifact {
+}
+class MusicTrack extends DurationArtifact {
+}
+class Video extends DurationArtifact {
+}
+
+
+class Image extends Artifact {
+}
+class Ebook extends Artifact {
+}
+
+
+
+/***** Media Sources ****/
+
+// all sources inherit MediaSource
+@gmf.node(label="name")
+abstract class MediaSource extends NamedElement {
+	ref Artifact[*]#origin contents;
+}
+
+enum SourceType {
+	CD;
+	DVD;
+	VHS;
+	CASSETTE;
+	HDD;
+	OTHER;
+}
+
+class ExternalSource extends MediaSource {
+	attr SourceType sourceType;
+}
+
+class Store extends MediaSource {
+}

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="ASCII"?>
+<gmfgraph:Canvas xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmfgraph="http://www.eclipse.org/gmf/2006/GraphicalDefinition" name="MediaLibrary">
+  <figures name="Default">
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="MediaCollectionHostFigureTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="MediaCollectionSyncedDevicesFigureTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="ArtifactOriginFigureTargetDecoration"/>
+    <descriptors name="LibraryFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="LibraryFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="LibraryLabelFigure" text="Library">
+          <maximumSize dx="10000" dy="50"/>
+        </children>
+        <children xsi:type="gmfgraph:Rectangle" name="LibraryCollectionsCompartmentFigure" outline="false"/>
+      </actualFigure>
+      <accessors accessor="getFigureLibraryLabelFigure" figure="//@figures.0/@descriptors.0/@actualFigure/@children.0"/>
+      <accessors accessor="getLibraryCollectionsCompartmentFigure" figure="//@figures.0/@descriptors.0/@actualFigure/@children.1"/>
+    </descriptors>
+    <descriptors name="MediaCollectionFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="MediaCollectionFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="MediaCollectionLabelFigure" text="MediaCollection">
+          <maximumSize dx="10000" dy="50"/>
+        </children>
+        <children xsi:type="gmfgraph:Rectangle" name="MediaCollectionMembersCompartmentFigure" outline="false"/>
+      </actualFigure>
+      <accessors accessor="getFigureMediaCollectionLabelFigure" figure="//@figures.0/@descriptors.1/@actualFigure/@children.0"/>
+      <accessors accessor="getMediaCollectionMembersCompartmentFigure" figure="//@figures.0/@descriptors.1/@actualFigure/@children.1"/>
+    </descriptors>
+    <descriptors name="TabletFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="TabletFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="TabletLabelFigure" text="Tablet"/>
+      </actualFigure>
+      <accessors accessor="getFigureTabletLabelFigure" figure="//@figures.0/@descriptors.2/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="ComputerFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="ComputerFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="ComputerLabelFigure" text="Computer"/>
+      </actualFigure>
+      <accessors accessor="getFigureComputerLabelFigure" figure="//@figures.0/@descriptors.3/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="SmartphoneFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="SmartphoneFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="SmartphoneLabelFigure" text="Smartphone"/>
+      </actualFigure>
+      <accessors accessor="getFigureSmartphoneLabelFigure" figure="//@figures.0/@descriptors.4/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="EReaderFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="EReaderFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="EReaderLabelFigure" text="EReader"/>
+      </actualFigure>
+      <accessors accessor="getFigureEReaderLabelFigure" figure="//@figures.0/@descriptors.5/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="AudioBookFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="AudioBookFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="AudioBookLabelFigure" text="AudioBook"/>
+      </actualFigure>
+      <accessors accessor="getFigureAudioBookLabelFigure" figure="//@figures.0/@descriptors.6/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="MusicTrackFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="MusicTrackFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="MusicTrackLabelFigure" text="MusicTrack"/>
+      </actualFigure>
+      <accessors accessor="getFigureMusicTrackLabelFigure" figure="//@figures.0/@descriptors.7/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="VideoFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="VideoFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="VideoLabelFigure" text="Video"/>
+      </actualFigure>
+      <accessors accessor="getFigureVideoLabelFigure" figure="//@figures.0/@descriptors.8/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="ImageFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="ImageFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="ImageLabelFigure" text="Image"/>
+      </actualFigure>
+      <accessors accessor="getFigureImageLabelFigure" figure="//@figures.0/@descriptors.9/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="EbookFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="EbookFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="EbookLabelFigure" text="Ebook"/>
+      </actualFigure>
+      <accessors accessor="getFigureEbookLabelFigure" figure="//@figures.0/@descriptors.10/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="ExternalSourceFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="ExternalSourceFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="ExternalSourceLabelFigure" text="ExternalSource"/>
+      </actualFigure>
+      <accessors accessor="getFigureExternalSourceLabelFigure" figure="//@figures.0/@descriptors.11/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="StoreFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="StoreFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="StoreLabelFigure" text="Store"/>
+      </actualFigure>
+      <accessors accessor="getFigureStoreLabelFigure" figure="//@figures.0/@descriptors.12/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="MediaCollectionHostFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="MediaCollectionHostFigure" lineKind="LINE_DASH" targetDecoration="//@figures.0/@figures.0">
+        <foregroundColor xsi:type="gmfgraph:RGBColor" red="255"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="MediaCollectionHostExternalLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="MediaCollectionHostExternalLabel" text="host"/>
+    </descriptors>
+    <descriptors name="MediaCollectionSyncedDevicesFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="MediaCollectionSyncedDevicesFigure" lineKind="LINE_DASH" targetDecoration="//@figures.0/@figures.1"/>
+    </descriptors>
+    <descriptors name="MediaCollectionSyncedDevicesExternalLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="MediaCollectionSyncedDevicesExternalLabel" text="syncedDevice"/>
+    </descriptors>
+    <descriptors name="ArtifactOriginFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ArtifactOriginFigure" lineKind="LINE_DOT" targetDecoration="//@figures.0/@figures.2">
+        <foregroundColor xsi:type="gmfgraph:RGBColor" red="50" green="200"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="ArtifactOriginExternalLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="ArtifactOriginExternalLabel" text="origin"/>
+    </descriptors>
+  </figures>
+  <nodes name="Library" figure="LibraryFigure"/>
+  <nodes name="MediaCollection" figure="MediaCollectionFigure"/>
+  <nodes name="Tablet" figure="TabletFigure"/>
+  <nodes name="Computer" figure="ComputerFigure"/>
+  <nodes name="Smartphone" figure="SmartphoneFigure"/>
+  <nodes name="EReader" figure="EReaderFigure"/>
+  <nodes name="AudioBook" figure="AudioBookFigure"/>
+  <nodes name="MusicTrack" figure="MusicTrackFigure"/>
+  <nodes name="Video" figure="VideoFigure"/>
+  <nodes name="Image" figure="ImageFigure"/>
+  <nodes name="Ebook" figure="EbookFigure"/>
+  <nodes name="ExternalSource" figure="ExternalSourceFigure"/>
+  <nodes name="Store" figure="StoreFigure"/>
+  <connections name="MediaCollectionHost" figure="MediaCollectionHostFigure"/>
+  <connections name="MediaCollectionSyncedDevices" figure="MediaCollectionSyncedDevicesFigure"/>
+  <connections name="ArtifactOrigin" figure="ArtifactOriginFigure"/>
+  <compartments name="LibraryCollectionsCompartment" figure="LibraryFigure" collapsible="true" accessor="//@figures.0/@descriptors.0/@accessors.1"/>
+  <compartments name="MediaCollectionMembersCompartment" figure="MediaCollectionFigure" collapsible="true" accessor="//@figures.0/@descriptors.1/@accessors.1"/>
+  <labels name="LibraryLabel" figure="LibraryFigure" accessor="//@figures.0/@descriptors.0/@accessors.0"/>
+  <labels name="MediaCollectionLabel" figure="MediaCollectionFigure" accessor="//@figures.0/@descriptors.1/@accessors.0"/>
+  <labels name="TabletLabel" figure="TabletFigure" accessor="//@figures.0/@descriptors.2/@accessors.0"/>
+  <labels name="ComputerLabel" figure="ComputerFigure" accessor="//@figures.0/@descriptors.3/@accessors.0"/>
+  <labels name="SmartphoneLabel" figure="SmartphoneFigure" accessor="//@figures.0/@descriptors.4/@accessors.0"/>
+  <labels name="EReaderLabel" figure="EReaderFigure" accessor="//@figures.0/@descriptors.5/@accessors.0"/>
+  <labels name="AudioBookLabel" figure="AudioBookFigure" accessor="//@figures.0/@descriptors.6/@accessors.0"/>
+  <labels name="MusicTrackLabel" figure="MusicTrackFigure" accessor="//@figures.0/@descriptors.7/@accessors.0"/>
+  <labels name="VideoLabel" figure="VideoFigure" accessor="//@figures.0/@descriptors.8/@accessors.0"/>
+  <labels name="ImageLabel" figure="ImageFigure" accessor="//@figures.0/@descriptors.9/@accessors.0"/>
+  <labels name="EbookLabel" figure="EbookFigure" accessor="//@figures.0/@descriptors.10/@accessors.0"/>
+  <labels name="ExternalSourceLabel" figure="ExternalSourceFigure" accessor="//@figures.0/@descriptors.11/@accessors.0"/>
+  <labels name="StoreLabel" figure="StoreFigure" accessor="//@figures.0/@descriptors.12/@accessors.0"/>
+  <labels name="MediaCollectionHostExternalLabel" figure="MediaCollectionHostExternalLabelFigure" elementIcon="false"/>
+  <labels name="MediaCollectionSyncedDevicesExternalLabel" figure="MediaCollectionSyncedDevicesExternalLabelFigure" elementIcon="false"/>
+  <labels name="ArtifactOriginExternalLabel" figure="ArtifactOriginExternalLabelFigure" elementIcon="false"/>
+</gmfgraph:Canvas>

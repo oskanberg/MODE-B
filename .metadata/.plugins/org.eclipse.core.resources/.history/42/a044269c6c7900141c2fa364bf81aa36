@@ -1,0 +1,18 @@
+/*
+ * 
+ */
+package MediaLibrary.diagram.providers;
+
+/**
+ * @generated
+ */
+public class MediaLibraryIconProvider extends org.eclipse.gmf.tooling.runtime.providers.DefaultElementTypeIconProvider implements org.eclipse.gmf.runtime.common.ui.services.icon.IIconProvider {
+
+		/**
+ * @generated
+ */
+	public MediaLibraryIconProvider() {
+		super(MediaLibrary.diagram.providers.MediaLibraryElementTypes.TYPED_INSTANCE);
+	}
+
+	}

@@ -1,0 +1,723 @@
+	/*
+ * 
+ */
+package MediaLibrary.diagram.part;
+
+	/**
+ * @generated
+ */
+public class MediaLibraryDiagramUpdater {
+		
+	/**
+ * @generated
+ */
+public static boolean isShortcutOrphaned(org.eclipse.gmf.runtime.notation.View view) {
+	return !view.isSetElement() || view.getElement() == null || view.getElement().eIsProxy();
+}
+	
+		/**
+ * @generated
+ */
+public static java.util.List<MediaLibrary.diagram.part.MediaLibraryNodeDescriptor> getSemanticChildren(org.eclipse.gmf.runtime.notation.View view) {
+		switch (MediaLibrary.diagram.part.MediaLibraryVisualIDRegistry.getVisualID(view)) {
+		case MediaLibrary.diagram.edit.parts.EcosystemEditPart.VISUAL_ID:
+	return getEcosystem_1000SemanticChildren(view);
+case MediaLibrary.diagram.edit.parts.LibraryLibraryCollectionsCompartmentEditPart.VISUAL_ID:
+	return getLibraryLibraryCollectionsCompartment_7001SemanticChildren(view);
+case MediaLibrary.diagram.edit.parts.MediaCollectionMediaCollectionMembersCompartmentEditPart.VISUAL_ID:
+	return getMediaCollectionMediaCollectionMembersCompartment_7002SemanticChildren(view);
+	}
+		return java.util.Collections.emptyList();
+}
+	
+	/**
+ * @generated
+ */
+public static java.util.List<MediaLibrary.diagram.part.MediaLibraryNodeDescriptor> getEcosystem_1000SemanticChildren(org.eclipse.gmf.runtime.notation.View view) {
+		if (!view.isSetElement()) {
+	return java.util.Collections.emptyList();
+}
+MediaLibrary.Ecosystem modelElement = (MediaLibrary.Ecosystem) view.getElement();
+	java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryNodeDescriptor> result = new java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryNodeDescriptor>();
+						for (java.util.Iterator<?> it = modelElement.getDevices().iterator(); it.hasNext();) {
+		MediaLibrary.Device childElement = (MediaLibrary.Device) it.next();
+					int visualID = MediaLibrary.diagram.part.MediaLibraryVisualIDRegistry.getNodeVisualID(view, childElement);
+			if (visualID == MediaLibrary.diagram.edit.parts.TabletEditPart.VISUAL_ID) {
+	result.add(new MediaLibrary.diagram.part.MediaLibraryNodeDescriptor(childElement, visualID));
+	continue;
+}
+if (visualID == MediaLibrary.diagram.edit.parts.ComputerEditPart.VISUAL_ID) {
+	result.add(new MediaLibrary.diagram.part.MediaLibraryNodeDescriptor(childElement, visualID));
+	continue;
+}
+if (visualID == MediaLibrary.diagram.edit.parts.SmartphoneEditPart.VISUAL_ID) {
+	result.add(new MediaLibrary.diagram.part.MediaLibraryNodeDescriptor(childElement, visualID));
+	continue;
+}
+if (visualID == MediaLibrary.diagram.edit.parts.EReaderEditPart.VISUAL_ID) {
+	result.add(new MediaLibrary.diagram.part.MediaLibraryNodeDescriptor(childElement, visualID));
+	continue;
+}
+	}
+						for (java.util.Iterator<?> it = modelElement.getMediaSources().iterator(); it.hasNext();) {
+		MediaLibrary.MediaSource childElement = (MediaLibrary.MediaSource) it.next();
+					int visualID = MediaLibrary.diagram.part.MediaLibraryVisualIDRegistry.getNodeVisualID(view, childElement);
+			if (visualID == MediaLibrary.diagram.edit.parts.ExternalSourceEditPart.VISUAL_ID) {
+	result.add(new MediaLibrary.diagram.part.MediaLibraryNodeDescriptor(childElement, visualID));
+	continue;
+}
+if (visualID == MediaLibrary.diagram.edit.parts.StoreEditPart.VISUAL_ID) {
+	result.add(new MediaLibrary.diagram.part.MediaLibraryNodeDescriptor(childElement, visualID));
+	continue;
+}
+	}
+						for (java.util.Iterator<?> it = modelElement.getLibraries().iterator(); it.hasNext();) {
+		MediaLibrary.Library childElement = (MediaLibrary.Library) it.next();
+					int visualID = MediaLibrary.diagram.part.MediaLibraryVisualIDRegistry.getNodeVisualID(view, childElement);
+			if (visualID == MediaLibrary.diagram.edit.parts.LibraryEditPart.VISUAL_ID) {
+	result.add(new MediaLibrary.diagram.part.MediaLibraryNodeDescriptor(childElement, visualID));
+	continue;
+}
+	}
+			return result;
+	}
+
+	/**
+ * @generated
+ */
+public static java.util.List<MediaLibrary.diagram.part.MediaLibraryNodeDescriptor> getLibraryLibraryCollectionsCompartment_7001SemanticChildren(org.eclipse.gmf.runtime.notation.View view) {
+		if (false == view.eContainer() instanceof org.eclipse.gmf.runtime.notation.View) {
+	return java.util.Collections.emptyList();
+}
+org.eclipse.gmf.runtime.notation.View containerView = (org.eclipse.gmf.runtime.notation.View) view.eContainer();
+if (!containerView.isSetElement()) {
+	return java.util.Collections.emptyList();
+}
+MediaLibrary.Library modelElement = (MediaLibrary.Library) containerView.getElement();
+	java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryNodeDescriptor> result = new java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryNodeDescriptor>();
+						for (java.util.Iterator<?> it = modelElement.getCollections().iterator(); it.hasNext();) {
+		MediaLibrary.MediaCollection childElement = (MediaLibrary.MediaCollection) it.next();
+					int visualID = MediaLibrary.diagram.part.MediaLibraryVisualIDRegistry.getNodeVisualID(view, childElement);
+			if (visualID == MediaLibrary.diagram.edit.parts.MediaCollectionEditPart.VISUAL_ID) {
+	result.add(new MediaLibrary.diagram.part.MediaLibraryNodeDescriptor(childElement, visualID));
+	continue;
+}
+	}
+			return result;
+	}
+
+	/**
+ * @generated
+ */
+public static java.util.List<MediaLibrary.diagram.part.MediaLibraryNodeDescriptor> getMediaCollectionMediaCollectionMembersCompartment_7002SemanticChildren(org.eclipse.gmf.runtime.notation.View view) {
+		if (false == view.eContainer() instanceof org.eclipse.gmf.runtime.notation.View) {
+	return java.util.Collections.emptyList();
+}
+org.eclipse.gmf.runtime.notation.View containerView = (org.eclipse.gmf.runtime.notation.View) view.eContainer();
+if (!containerView.isSetElement()) {
+	return java.util.Collections.emptyList();
+}
+MediaLibrary.MediaCollection modelElement = (MediaLibrary.MediaCollection) containerView.getElement();
+	java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryNodeDescriptor> result = new java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryNodeDescriptor>();
+						for (java.util.Iterator<?> it = modelElement.getMembers().iterator(); it.hasNext();) {
+		MediaLibrary.Artifact childElement = (MediaLibrary.Artifact) it.next();
+					int visualID = MediaLibrary.diagram.part.MediaLibraryVisualIDRegistry.getNodeVisualID(view, childElement);
+			if (visualID == MediaLibrary.diagram.edit.parts.AudioBookEditPart.VISUAL_ID) {
+	result.add(new MediaLibrary.diagram.part.MediaLibraryNodeDescriptor(childElement, visualID));
+	continue;
+}
+if (visualID == MediaLibrary.diagram.edit.parts.MusicTrackEditPart.VISUAL_ID) {
+	result.add(new MediaLibrary.diagram.part.MediaLibraryNodeDescriptor(childElement, visualID));
+	continue;
+}
+if (visualID == MediaLibrary.diagram.edit.parts.VideoEditPart.VISUAL_ID) {
+	result.add(new MediaLibrary.diagram.part.MediaLibraryNodeDescriptor(childElement, visualID));
+	continue;
+}
+if (visualID == MediaLibrary.diagram.edit.parts.ImageEditPart.VISUAL_ID) {
+	result.add(new MediaLibrary.diagram.part.MediaLibraryNodeDescriptor(childElement, visualID));
+	continue;
+}
+if (visualID == MediaLibrary.diagram.edit.parts.EbookEditPart.VISUAL_ID) {
+	result.add(new MediaLibrary.diagram.part.MediaLibraryNodeDescriptor(childElement, visualID));
+	continue;
+}
+	}
+			return result;
+	}
+	
+		/**
+ * @generated
+ */
+public static java.util.List<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getContainedLinks(org.eclipse.gmf.runtime.notation.View view) {
+		switch (MediaLibrary.diagram.part.MediaLibraryVisualIDRegistry.getVisualID(view)) {
+		case MediaLibrary.diagram.edit.parts.EcosystemEditPart.VISUAL_ID:
+	return getEcosystem_1000ContainedLinks(view);
+case MediaLibrary.diagram.edit.parts.TabletEditPart.VISUAL_ID:
+	return getTablet_2001ContainedLinks(view);
+case MediaLibrary.diagram.edit.parts.ComputerEditPart.VISUAL_ID:
+	return getComputer_2002ContainedLinks(view);
+case MediaLibrary.diagram.edit.parts.SmartphoneEditPart.VISUAL_ID:
+	return getSmartphone_2003ContainedLinks(view);
+case MediaLibrary.diagram.edit.parts.EReaderEditPart.VISUAL_ID:
+	return getEReader_2004ContainedLinks(view);
+case MediaLibrary.diagram.edit.parts.ExternalSourceEditPart.VISUAL_ID:
+	return getExternalSource_2005ContainedLinks(view);
+case MediaLibrary.diagram.edit.parts.StoreEditPart.VISUAL_ID:
+	return getStore_2006ContainedLinks(view);
+case MediaLibrary.diagram.edit.parts.LibraryEditPart.VISUAL_ID:
+	return getLibrary_2007ContainedLinks(view);
+case MediaLibrary.diagram.edit.parts.MediaCollectionEditPart.VISUAL_ID:
+	return getMediaCollection_3001ContainedLinks(view);
+case MediaLibrary.diagram.edit.parts.AudioBookEditPart.VISUAL_ID:
+	return getAudioBook_3002ContainedLinks(view);
+case MediaLibrary.diagram.edit.parts.MusicTrackEditPart.VISUAL_ID:
+	return getMusicTrack_3003ContainedLinks(view);
+case MediaLibrary.diagram.edit.parts.VideoEditPart.VISUAL_ID:
+	return getVideo_3004ContainedLinks(view);
+case MediaLibrary.diagram.edit.parts.ImageEditPart.VISUAL_ID:
+	return getImage_3005ContainedLinks(view);
+case MediaLibrary.diagram.edit.parts.EbookEditPart.VISUAL_ID:
+	return getEbook_3006ContainedLinks(view);
+	}
+		return java.util.Collections.emptyList();
+}
+	
+		/**
+ * @generated
+ */
+public static java.util.List<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getIncomingLinks(org.eclipse.gmf.runtime.notation.View view) {
+		switch (MediaLibrary.diagram.part.MediaLibraryVisualIDRegistry.getVisualID(view)) {
+		case MediaLibrary.diagram.edit.parts.TabletEditPart.VISUAL_ID:
+	return getTablet_2001IncomingLinks(view);
+case MediaLibrary.diagram.edit.parts.ComputerEditPart.VISUAL_ID:
+	return getComputer_2002IncomingLinks(view);
+case MediaLibrary.diagram.edit.parts.SmartphoneEditPart.VISUAL_ID:
+	return getSmartphone_2003IncomingLinks(view);
+case MediaLibrary.diagram.edit.parts.EReaderEditPart.VISUAL_ID:
+	return getEReader_2004IncomingLinks(view);
+case MediaLibrary.diagram.edit.parts.ExternalSourceEditPart.VISUAL_ID:
+	return getExternalSource_2005IncomingLinks(view);
+case MediaLibrary.diagram.edit.parts.StoreEditPart.VISUAL_ID:
+	return getStore_2006IncomingLinks(view);
+case MediaLibrary.diagram.edit.parts.LibraryEditPart.VISUAL_ID:
+	return getLibrary_2007IncomingLinks(view);
+case MediaLibrary.diagram.edit.parts.MediaCollectionEditPart.VISUAL_ID:
+	return getMediaCollection_3001IncomingLinks(view);
+case MediaLibrary.diagram.edit.parts.AudioBookEditPart.VISUAL_ID:
+	return getAudioBook_3002IncomingLinks(view);
+case MediaLibrary.diagram.edit.parts.MusicTrackEditPart.VISUAL_ID:
+	return getMusicTrack_3003IncomingLinks(view);
+case MediaLibrary.diagram.edit.parts.VideoEditPart.VISUAL_ID:
+	return getVideo_3004IncomingLinks(view);
+case MediaLibrary.diagram.edit.parts.ImageEditPart.VISUAL_ID:
+	return getImage_3005IncomingLinks(view);
+case MediaLibrary.diagram.edit.parts.EbookEditPart.VISUAL_ID:
+	return getEbook_3006IncomingLinks(view);
+	}
+		return java.util.Collections.emptyList();
+}
+	
+		/**
+ * @generated
+ */
+public static java.util.List<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getOutgoingLinks(org.eclipse.gmf.runtime.notation.View view) {
+		switch (MediaLibrary.diagram.part.MediaLibraryVisualIDRegistry.getVisualID(view)) {
+		case MediaLibrary.diagram.edit.parts.TabletEditPart.VISUAL_ID:
+	return getTablet_2001OutgoingLinks(view);
+case MediaLibrary.diagram.edit.parts.ComputerEditPart.VISUAL_ID:
+	return getComputer_2002OutgoingLinks(view);
+case MediaLibrary.diagram.edit.parts.SmartphoneEditPart.VISUAL_ID:
+	return getSmartphone_2003OutgoingLinks(view);
+case MediaLibrary.diagram.edit.parts.EReaderEditPart.VISUAL_ID:
+	return getEReader_2004OutgoingLinks(view);
+case MediaLibrary.diagram.edit.parts.ExternalSourceEditPart.VISUAL_ID:
+	return getExternalSource_2005OutgoingLinks(view);
+case MediaLibrary.diagram.edit.parts.StoreEditPart.VISUAL_ID:
+	return getStore_2006OutgoingLinks(view);
+case MediaLibrary.diagram.edit.parts.LibraryEditPart.VISUAL_ID:
+	return getLibrary_2007OutgoingLinks(view);
+case MediaLibrary.diagram.edit.parts.MediaCollectionEditPart.VISUAL_ID:
+	return getMediaCollection_3001OutgoingLinks(view);
+case MediaLibrary.diagram.edit.parts.AudioBookEditPart.VISUAL_ID:
+	return getAudioBook_3002OutgoingLinks(view);
+case MediaLibrary.diagram.edit.parts.MusicTrackEditPart.VISUAL_ID:
+	return getMusicTrack_3003OutgoingLinks(view);
+case MediaLibrary.diagram.edit.parts.VideoEditPart.VISUAL_ID:
+	return getVideo_3004OutgoingLinks(view);
+case MediaLibrary.diagram.edit.parts.ImageEditPart.VISUAL_ID:
+	return getImage_3005OutgoingLinks(view);
+case MediaLibrary.diagram.edit.parts.EbookEditPart.VISUAL_ID:
+	return getEbook_3006OutgoingLinks(view);
+	}
+		return java.util.Collections.emptyList();
+}
+		
+/**
+ * @generated
+ */
+public static java.util.List<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getEcosystem_1000ContainedLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getTablet_2001ContainedLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getComputer_2002ContainedLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getSmartphone_2003ContainedLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getEReader_2004ContainedLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getExternalSource_2005ContainedLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getStore_2006ContainedLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getLibrary_2007ContainedLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getMediaCollection_3001ContainedLinks(org.eclipse.gmf.runtime.notation.View view) {
+	MediaLibrary.MediaCollection modelElement = (MediaLibrary.MediaCollection) view.getElement();
+		java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> result = new java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor>();
+		result.addAll(getOutgoingFeatureModelFacetLinks_MediaCollection_Host_4001(modelElement));	
+	result.addAll(getOutgoingFeatureModelFacetLinks_MediaCollection_SyncedDevices_4002(modelElement));	
+	return result;
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getAudioBook_3002ContainedLinks(org.eclipse.gmf.runtime.notation.View view) {
+	MediaLibrary.AudioBook modelElement = (MediaLibrary.AudioBook) view.getElement();
+		java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> result = new java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor>();
+		result.addAll(getOutgoingFeatureModelFacetLinks_Artifact_Origin_4003(modelElement));	
+	return result;
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getMusicTrack_3003ContainedLinks(org.eclipse.gmf.runtime.notation.View view) {
+	MediaLibrary.MusicTrack modelElement = (MediaLibrary.MusicTrack) view.getElement();
+		java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> result = new java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor>();
+		result.addAll(getOutgoingFeatureModelFacetLinks_Artifact_Origin_4003(modelElement));	
+	return result;
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getVideo_3004ContainedLinks(org.eclipse.gmf.runtime.notation.View view) {
+	MediaLibrary.Video modelElement = (MediaLibrary.Video) view.getElement();
+		java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> result = new java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor>();
+		result.addAll(getOutgoingFeatureModelFacetLinks_Artifact_Origin_4003(modelElement));	
+	return result;
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getImage_3005ContainedLinks(org.eclipse.gmf.runtime.notation.View view) {
+	MediaLibrary.Image modelElement = (MediaLibrary.Image) view.getElement();
+		java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> result = new java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor>();
+		result.addAll(getOutgoingFeatureModelFacetLinks_Artifact_Origin_4003(modelElement));	
+	return result;
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getEbook_3006ContainedLinks(org.eclipse.gmf.runtime.notation.View view) {
+	MediaLibrary.Ebook modelElement = (MediaLibrary.Ebook) view.getElement();
+		java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> result = new java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor>();
+		result.addAll(getOutgoingFeatureModelFacetLinks_Artifact_Origin_4003(modelElement));	
+	return result;
+}
+		
+/**
+ * @generated
+ */
+public static java.util.List<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getTablet_2001IncomingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	MediaLibrary.Tablet modelElement = (MediaLibrary.Tablet) view.getElement();
+	java.util.Map<org.eclipse.emf.ecore.EObject, java.util.Collection<org.eclipse.emf.ecore.EStructuralFeature.Setting>> crossReferences = org.eclipse.emf.ecore.util.EcoreUtil.CrossReferencer.find(view.eResource().getResourceSet().getResources());
+		java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> result = new java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor>();
+		result.addAll(getIncomingFeatureModelFacetLinks_MediaCollection_Host_4001(modelElement, crossReferences));	
+	result.addAll(getIncomingFeatureModelFacetLinks_MediaCollection_SyncedDevices_4002(modelElement, crossReferences));	
+	return result;
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getComputer_2002IncomingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	MediaLibrary.Computer modelElement = (MediaLibrary.Computer) view.getElement();
+	java.util.Map<org.eclipse.emf.ecore.EObject, java.util.Collection<org.eclipse.emf.ecore.EStructuralFeature.Setting>> crossReferences = org.eclipse.emf.ecore.util.EcoreUtil.CrossReferencer.find(view.eResource().getResourceSet().getResources());
+		java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> result = new java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor>();
+		result.addAll(getIncomingFeatureModelFacetLinks_MediaCollection_Host_4001(modelElement, crossReferences));	
+	result.addAll(getIncomingFeatureModelFacetLinks_MediaCollection_SyncedDevices_4002(modelElement, crossReferences));	
+	return result;
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getSmartphone_2003IncomingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	MediaLibrary.Smartphone modelElement = (MediaLibrary.Smartphone) view.getElement();
+	java.util.Map<org.eclipse.emf.ecore.EObject, java.util.Collection<org.eclipse.emf.ecore.EStructuralFeature.Setting>> crossReferences = org.eclipse.emf.ecore.util.EcoreUtil.CrossReferencer.find(view.eResource().getResourceSet().getResources());
+		java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> result = new java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor>();
+		result.addAll(getIncomingFeatureModelFacetLinks_MediaCollection_Host_4001(modelElement, crossReferences));	
+	result.addAll(getIncomingFeatureModelFacetLinks_MediaCollection_SyncedDevices_4002(modelElement, crossReferences));	
+	return result;
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getEReader_2004IncomingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	MediaLibrary.EReader modelElement = (MediaLibrary.EReader) view.getElement();
+	java.util.Map<org.eclipse.emf.ecore.EObject, java.util.Collection<org.eclipse.emf.ecore.EStructuralFeature.Setting>> crossReferences = org.eclipse.emf.ecore.util.EcoreUtil.CrossReferencer.find(view.eResource().getResourceSet().getResources());
+		java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> result = new java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor>();
+		result.addAll(getIncomingFeatureModelFacetLinks_MediaCollection_Host_4001(modelElement, crossReferences));	
+	result.addAll(getIncomingFeatureModelFacetLinks_MediaCollection_SyncedDevices_4002(modelElement, crossReferences));	
+	return result;
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getExternalSource_2005IncomingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	MediaLibrary.ExternalSource modelElement = (MediaLibrary.ExternalSource) view.getElement();
+	java.util.Map<org.eclipse.emf.ecore.EObject, java.util.Collection<org.eclipse.emf.ecore.EStructuralFeature.Setting>> crossReferences = org.eclipse.emf.ecore.util.EcoreUtil.CrossReferencer.find(view.eResource().getResourceSet().getResources());
+		java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> result = new java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor>();
+		result.addAll(getIncomingFeatureModelFacetLinks_Artifact_Origin_4003(modelElement, crossReferences));	
+	return result;
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getStore_2006IncomingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	MediaLibrary.Store modelElement = (MediaLibrary.Store) view.getElement();
+	java.util.Map<org.eclipse.emf.ecore.EObject, java.util.Collection<org.eclipse.emf.ecore.EStructuralFeature.Setting>> crossReferences = org.eclipse.emf.ecore.util.EcoreUtil.CrossReferencer.find(view.eResource().getResourceSet().getResources());
+		java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> result = new java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor>();
+		result.addAll(getIncomingFeatureModelFacetLinks_Artifact_Origin_4003(modelElement, crossReferences));	
+	return result;
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getLibrary_2007IncomingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getMediaCollection_3001IncomingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getAudioBook_3002IncomingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getMusicTrack_3003IncomingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getVideo_3004IncomingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getImage_3005IncomingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getEbook_3006IncomingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+		
+/**
+ * @generated
+ */
+public static java.util.List<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getTablet_2001OutgoingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getComputer_2002OutgoingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getSmartphone_2003OutgoingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getEReader_2004OutgoingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getExternalSource_2005OutgoingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getStore_2006OutgoingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getLibrary_2007OutgoingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getMediaCollection_3001OutgoingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	MediaLibrary.MediaCollection modelElement = (MediaLibrary.MediaCollection) view.getElement();
+		java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> result = new java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor>();
+		result.addAll(getOutgoingFeatureModelFacetLinks_MediaCollection_Host_4001(modelElement));	
+	result.addAll(getOutgoingFeatureModelFacetLinks_MediaCollection_SyncedDevices_4002(modelElement));	
+	return result;
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getAudioBook_3002OutgoingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	MediaLibrary.AudioBook modelElement = (MediaLibrary.AudioBook) view.getElement();
+		java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> result = new java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor>();
+		result.addAll(getOutgoingFeatureModelFacetLinks_Artifact_Origin_4003(modelElement));	
+	return result;
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getMusicTrack_3003OutgoingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	MediaLibrary.MusicTrack modelElement = (MediaLibrary.MusicTrack) view.getElement();
+		java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> result = new java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor>();
+		result.addAll(getOutgoingFeatureModelFacetLinks_Artifact_Origin_4003(modelElement));	
+	return result;
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getVideo_3004OutgoingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	MediaLibrary.Video modelElement = (MediaLibrary.Video) view.getElement();
+		java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> result = new java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor>();
+		result.addAll(getOutgoingFeatureModelFacetLinks_Artifact_Origin_4003(modelElement));	
+	return result;
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getImage_3005OutgoingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	MediaLibrary.Image modelElement = (MediaLibrary.Image) view.getElement();
+		java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> result = new java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor>();
+		result.addAll(getOutgoingFeatureModelFacetLinks_Artifact_Origin_4003(modelElement));	
+	return result;
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getEbook_3006OutgoingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	MediaLibrary.Ebook modelElement = (MediaLibrary.Ebook) view.getElement();
+		java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> result = new java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor>();
+		result.addAll(getOutgoingFeatureModelFacetLinks_Artifact_Origin_4003(modelElement));	
+	return result;
+}
+		
+/**
+ * @generated
+ */
+private static java.util.Collection<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getIncomingFeatureModelFacetLinks_MediaCollection_Host_4001(MediaLibrary.Device target, java.util.Map<org.eclipse.emf.ecore.EObject, java.util.Collection<org.eclipse.emf.ecore.EStructuralFeature.Setting>> crossReferences) {
+	java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> result = new java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor>();
+	java.util.Collection<org.eclipse.emf.ecore.EStructuralFeature.Setting> settings = crossReferences.get(target);
+	for (org.eclipse.emf.ecore.EStructuralFeature.Setting setting : settings) {
+		if (setting.getEStructuralFeature() == MediaLibrary.MediaLibraryPackage.eINSTANCE.getMediaCollection_Host()) {
+	result.add(new MediaLibrary.diagram.part.MediaLibraryLinkDescriptor(setting.getEObject(), target, MediaLibrary.diagram.providers.MediaLibraryElementTypes.MediaCollectionHost_4001, MediaLibrary.diagram.edit.parts.MediaCollectionHostEditPart.VISUAL_ID));
+}
+	}
+	return result;	
+}
+
+/**
+ * @generated
+ */
+private static java.util.Collection<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getIncomingFeatureModelFacetLinks_MediaCollection_SyncedDevices_4002(MediaLibrary.Device target, java.util.Map<org.eclipse.emf.ecore.EObject, java.util.Collection<org.eclipse.emf.ecore.EStructuralFeature.Setting>> crossReferences) {
+	java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> result = new java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor>();
+	java.util.Collection<org.eclipse.emf.ecore.EStructuralFeature.Setting> settings = crossReferences.get(target);
+	for (org.eclipse.emf.ecore.EStructuralFeature.Setting setting : settings) {
+		if (setting.getEStructuralFeature() == MediaLibrary.MediaLibraryPackage.eINSTANCE.getMediaCollection_SyncedDevices()) {
+	result.add(new MediaLibrary.diagram.part.MediaLibraryLinkDescriptor(setting.getEObject(), target, MediaLibrary.diagram.providers.MediaLibraryElementTypes.MediaCollectionSyncedDevices_4002, MediaLibrary.diagram.edit.parts.MediaCollectionSyncedDevicesEditPart.VISUAL_ID));
+}
+	}
+	return result;	
+}
+
+/**
+ * @generated
+ */
+private static java.util.Collection<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getIncomingFeatureModelFacetLinks_Artifact_Origin_4003(MediaLibrary.MediaSource target, java.util.Map<org.eclipse.emf.ecore.EObject, java.util.Collection<org.eclipse.emf.ecore.EStructuralFeature.Setting>> crossReferences) {
+	java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> result = new java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor>();
+	java.util.Collection<org.eclipse.emf.ecore.EStructuralFeature.Setting> settings = crossReferences.get(target);
+	for (org.eclipse.emf.ecore.EStructuralFeature.Setting setting : settings) {
+		if (setting.getEStructuralFeature() == MediaLibrary.MediaLibraryPackage.eINSTANCE.getArtifact_Origin()) {
+	result.add(new MediaLibrary.diagram.part.MediaLibraryLinkDescriptor(setting.getEObject(), target, MediaLibrary.diagram.providers.MediaLibraryElementTypes.ArtifactOrigin_4003, MediaLibrary.diagram.edit.parts.ArtifactOriginEditPart.VISUAL_ID));
+}
+	}
+	return result;	
+}
+		
+	/**
+ * @generated
+ */
+private static java.util.Collection<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getOutgoingFeatureModelFacetLinks_MediaCollection_Host_4001(MediaLibrary.MediaCollection source) {
+	java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> result = new java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor>();
+		MediaLibrary.Device destination = source.getHost();
+	if (destination == null) {
+		return result;
+	}
+		result.add(new MediaLibrary.diagram.part.MediaLibraryLinkDescriptor(source, destination, MediaLibrary.diagram.providers.MediaLibraryElementTypes.MediaCollectionHost_4001, MediaLibrary.diagram.edit.parts.MediaCollectionHostEditPart.VISUAL_ID));
+		return result;
+}
+	
+	/**
+ * @generated
+ */
+private static java.util.Collection<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getOutgoingFeatureModelFacetLinks_MediaCollection_SyncedDevices_4002(MediaLibrary.MediaCollection source) {
+	java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> result = new java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor>();
+		for (java.util.Iterator<?> destinations = source.getSyncedDevices().iterator(); destinations.hasNext();) {
+		MediaLibrary.Device destination = (MediaLibrary.Device) destinations.next();
+		result.add(new MediaLibrary.diagram.part.MediaLibraryLinkDescriptor(source, destination, MediaLibrary.diagram.providers.MediaLibraryElementTypes.MediaCollectionSyncedDevices_4002, MediaLibrary.diagram.edit.parts.MediaCollectionSyncedDevicesEditPart.VISUAL_ID));
+		}
+		return result;
+}
+	
+	/**
+ * @generated
+ */
+private static java.util.Collection<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getOutgoingFeatureModelFacetLinks_Artifact_Origin_4003(MediaLibrary.Artifact source) {
+	java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> result = new java.util.LinkedList<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor>();
+		MediaLibrary.MediaSource destination = source.getOrigin();
+	if (destination == null) {
+		return result;
+	}
+		result.add(new MediaLibrary.diagram.part.MediaLibraryLinkDescriptor(source, destination, MediaLibrary.diagram.providers.MediaLibraryElementTypes.ArtifactOrigin_4003, MediaLibrary.diagram.edit.parts.ArtifactOriginEditPart.VISUAL_ID));
+		return result;
+}
+	
+					/**
+ * @generated
+ */
+	public static final org.eclipse.gmf.tooling.runtime.update.DiagramUpdater TYPED_INSTANCE = new org.eclipse.gmf.tooling.runtime.update.DiagramUpdater() {
+				/**
+ * @generated
+ */
+		@Override
+
+		public java.util.List<MediaLibrary.diagram.part.MediaLibraryNodeDescriptor> getSemanticChildren(org.eclipse.gmf.runtime.notation.View view) {
+			return MediaLibraryDiagramUpdater.getSemanticChildren(view);
+		}
+
+		/**
+ * @generated
+ */
+		@Override
+
+		public java.util.List<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getContainedLinks(org.eclipse.gmf.runtime.notation.View view) {
+			return MediaLibraryDiagramUpdater.getContainedLinks(view);
+		}
+
+		/**
+ * @generated
+ */
+		@Override
+
+		public java.util.List<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getIncomingLinks(org.eclipse.gmf.runtime.notation.View view) {
+			return MediaLibraryDiagramUpdater.getIncomingLinks(view);
+		}
+
+		/**
+ * @generated
+ */
+		@Override
+
+		public java.util.List<MediaLibrary.diagram.part.MediaLibraryLinkDescriptor> getOutgoingLinks(org.eclipse.gmf.runtime.notation.View view) {
+			return MediaLibraryDiagramUpdater.getOutgoingLinks(view);
+		}
+	}; 
+			
+	}

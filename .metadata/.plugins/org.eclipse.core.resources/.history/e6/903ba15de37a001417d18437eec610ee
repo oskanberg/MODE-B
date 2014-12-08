@@ -1,0 +1,11 @@
+pre {
+  "Running ETL".println();
+}
+
+rule CopyAllButEbook
+transform t : MediaCollection to n : MediaCollection {
+	n.name = t.name;
+	n.members = t.members;
+	n.host = t.host;
+	n.syncedDevices = t.syncedDevices;	  
+}

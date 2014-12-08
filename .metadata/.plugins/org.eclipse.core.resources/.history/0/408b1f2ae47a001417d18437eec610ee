@@ -1,0 +1,30 @@
+pre {
+  "Running ETL".println();
+}
+
+rule CopyAllButEbook
+transform t : MediaLibrary!MediaCollection to n : MediaCollection {
+	n.name = t.name;
+	for (member in t.members) {
+		if (member.getType() <> "Ebook") {
+			n.members.add(member);
+		}
+	}
+	n.host = t.host;
+	n.syncedDevices = t.syncedDevices;	  
+}
+
+operation Artifact getType() : String {
+	if (self.isTypeOf(MusicTrack)) {
+		return "MusicTrack";
+	} else if (self.isTypeOf(AudioBook)) {
+		return "AudioBook";
+	} else if (self.isTypeOf(Video)) {
+		return "Video";
+	} else if (self.isTypeOf(Image)) {
+		return "Image";
+	} else if (self.isTypeOf(Ebook)) {
+		return "Ebook";
+	}
+	return "Unknown";
+}

@@ -1,0 +1,11 @@
+/*
+ * 
+ */
+package MediaLibrary.diagram.edit.helpers;
+
+/**
+ * @generated
+ */
+public class SmartphoneEditHelper extends
+		MediaLibrary.diagram.edit.helpers.MediaLibraryBaseEditHelper {
+}

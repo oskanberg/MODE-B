@@ -1,0 +1,32 @@
+
+Library.all.first().getTotalSongDuration().println();
+Library.all.first().getAllArtifactsFromAStoreInclDuplicates().println();
+
+/*
+	Calculate the total running time of all songs in a library
+*/
+operation Library getTotalSongDuration() : Integer {
+	
+	// collect all MusicTracks from all collections
+	// not sure if this is idiomatic - could also use a loop and add to new collection
+	var songs = self.collections.members.flatten().collect(i : MusicTrack| i);
+	
+	var totalDuration : Integer = 0;
+	// songs is a collection of collections, flatten it
+	for (song in songs) {
+		totalDuration = totalDuration + song.duration;
+	}
+	// totalDuration now represents aggregated len of all songs (even duplicates)
+	return totalDuration;
+}
+
+
+/*
+	Calculate all media artifacts in a library that have been purchased from a media store
+*/
+operation Library getAllArtifactsFromAStoreInclDuplicates() : Bag {
+	// collect all members from collections
+	var allMembers = self.collections.members.flatten();
+	// return all the members whose origin is a Store
+	return allMembers.select(i| i.origin.isTypeOf(Store)).asBag();
+}

@@ -1,0 +1,62 @@
+/*
+ * 
+ */
+package MediaLibrary.diagram.providers.assistants;
+
+/**
+ * @generated
+ */
+public class MediaLibraryModelingAssistantProviderOfSmartphoneEditPart extends MediaLibrary.diagram.providers.MediaLibraryModelingAssistantProvider {
+
+					
+	
+		/**
+ * @generated
+ */
+	@Override
+
+	public java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> getRelTypesOnTarget(org.eclipse.core.runtime.IAdaptable target) {
+		org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart targetEditPart =
+				(org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart) target.getAdapter(
+						org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart.class);
+		return doGetRelTypesOnTarget((MediaLibrary.diagram.edit.parts.SmartphoneEditPart) targetEditPart);
+	}
+
+		/**
+ * @generated
+ */
+	public java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> doGetRelTypesOnTarget(MediaLibrary.diagram.edit.parts.SmartphoneEditPart target) {
+		java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> types = new java.util.ArrayList<org.eclipse.gmf.runtime.emf.type.core.IElementType>(2);
+				types.add(MediaLibrary.diagram.providers.MediaLibraryElementTypes.MediaCollectionHost_4001);
+				types.add(MediaLibrary.diagram.providers.MediaLibraryElementTypes.MediaCollectionSyncedDevices_4002);
+				return types;
+	}
+
+		/**
+ * @generated
+ */
+	@Override
+
+	public java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> getTypesForSource(org.eclipse.core.runtime.IAdaptable target,
+			org.eclipse.gmf.runtime.emf.type.core.IElementType relationshipType) {
+		org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart targetEditPart =
+				(org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart) target.getAdapter(
+						org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart.class);
+		return doGetTypesForSource((MediaLibrary.diagram.edit.parts.SmartphoneEditPart) targetEditPart, relationshipType);
+	}
+
+		/**
+ * @generated
+ */
+	public java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> doGetTypesForSource(MediaLibrary.diagram.edit.parts.SmartphoneEditPart target, org.eclipse.gmf.runtime.emf.type.core.IElementType relationshipType) {
+		java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> types = new java.util.ArrayList<org.eclipse.gmf.runtime.emf.type.core.IElementType>();
+				if (relationshipType == MediaLibrary.diagram.providers.MediaLibraryElementTypes.MediaCollectionHost_4001) {
+						types.add(MediaLibrary.diagram.providers.MediaLibraryElementTypes.MediaCollection_3001);
+					}
+		 else 		if (relationshipType == MediaLibrary.diagram.providers.MediaLibraryElementTypes.MediaCollectionSyncedDevices_4002) {
+						types.add(MediaLibrary.diagram.providers.MediaLibraryElementTypes.MediaCollection_3001);
+					}
+				return types;
+	}
+
+	}

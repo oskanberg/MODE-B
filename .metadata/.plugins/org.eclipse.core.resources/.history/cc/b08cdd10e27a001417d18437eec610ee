@@ -1,0 +1,5 @@
+rule CopyAllButEbook 
+  transform t : MediaCollection
+  to n : MediaCollection {
+  
+}

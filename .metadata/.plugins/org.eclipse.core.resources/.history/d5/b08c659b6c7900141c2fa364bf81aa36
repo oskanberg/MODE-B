@@ -1,0 +1,25 @@
+	/*
+ * 
+ */
+package MediaLibrary.diagram.edit.policies;
+
+/**
+ * @generated
+ */
+public class MediaCollectionHostItemSemanticEditPolicy extends MediaLibrary.diagram.edit.policies.MediaLibraryBaseItemSemanticEditPolicy {
+
+		/**
+ * @generated
+ */
+	public MediaCollectionHostItemSemanticEditPolicy() {
+				super(MediaLibrary.diagram.providers.MediaLibraryElementTypes.MediaCollectionHost_4001);
+	}
+
+			/**
+ * @generated
+ */
+	protected org.eclipse.gef.commands.Command getDestroyReferenceCommand(org.eclipse.gmf.runtime.emf.type.core.requests.DestroyReferenceRequest req) {
+		return getGEFWrapper(new org.eclipse.gmf.runtime.emf.type.core.commands.DestroyReferenceCommand(req));
+	}
+		
+	}

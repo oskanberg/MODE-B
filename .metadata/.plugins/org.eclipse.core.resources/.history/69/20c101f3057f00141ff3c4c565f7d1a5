@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: MODE-B.validation
+Bundle-SymbolicName: MODE-B.validation; singleton:=true
+Bundle-Version: 0.1.0.qualifier
+Require-Bundle: org.eclipse.emf.ecore,
+ org.eclipse.ui.ide;bundle-version="3.10.0",
+ org.eclipse.epsilon.evl.emf.validation;bundle-version="1.2.0"

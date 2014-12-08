@@ -1,0 +1,112 @@
+
+context MediaCollection {
+	constraint NameUniqueness {
+		check:  MediaCollection.all.one(i|i.name == self.name)
+		message: "Collection name must be unique"
+		fix {
+			title: "Rename to " + self.getFirstUniqueName()
+			do{
+				self.name = self.getFirstUniqueName();
+			}
+		}
+	}
+	
+	//constraint HasHost {
+	//	check: self.host.isDefined()
+	//	message: "Media Collection " + self.name + " has no host."
+	//}
+	
+	constraint HostIsAlsoSynchronised {
+		guard: self.satisfies("HasHost")
+		check: self.syncedDevices.one(i|i == self.host)
+		message: "Host (" + self.host + ") is not one of the synchronised devices of " + self
+		fix {
+			title: "Make host a synchronised device" 
+			do {
+				self.syncedDevices.add(self.host);
+			}
+		}
+	}
+}
+
+context Artifact {
+	constraint HasName {
+		check: self.name.isDefined() and self.name <> ""
+		message: "Element" + self + " must have a name"
+	}
+	
+	constraint HasOrigin {
+		guard: self.satisfies("HasName")
+		check: self.origin.isDefined()
+		message: self.name + " must come from somewhere"
+	}
+	
+	constraint NameStartsWithUppercase {
+		guard: self.satisfies("HasName")
+		check: self.name.substring(0,1) == self.name.substring(0,1).toUpperCase()
+		message: "Artifact " + self.name + " name needs to begin with uppercase"
+	}
+}
+
+context EReader {
+	critique AudioCompatibility {
+		// if audio is enabled, don't care
+		guard: not self.audioEnabled
+		check: self.getCollectionsRequiringAudio().size() == 0
+		message: "EReader " + self + " does not have audio capacity, but collection requires it. If device is host of one, change the host of the collection."
+		fix {
+			guard: not self.collections.exists(i | i.host == self)
+			title: "Remove the offending collection(s) from device"
+			do {
+				self.collections.removeAll(self.getCollectionsRequiringAudio());
+			}
+		}
+	}
+	
+	critique VideoCompatibility {
+		// if video is enabled, don't care
+		guard: not self.videoEnabled
+		check: self.getCollectionsRequiringVideo().size() == 0
+		message: "EReader " + self + " does not have video capacity, but collection requires it. If device is host of one, change the host of the collection."
+		fix {
+			guard: not self.collections.exists(i | i.host == self)
+			title: "Remove the offending collection(s) from device"
+			do {
+				self.collections.removeAll(self.getCollectionsRequiringVideo());
+			}
+		}
+	}
+}
+
+@cache
+operation Device getCollectionsRequiringAudio() : Set {
+	var audioCollections : Set;
+	for (collection in self.collections) {
+		// check if there exists an artifact that is either music or audiobook
+		var containsAudio = collection.members.exists(i| i.isTypeOf(MusicTrack) or i.isTypeOf(AudioBook));
+		if (containsAudio) {
+			audioCollections.add(collection);
+		}
+	}
+	return audioCollections;
+}
+
+@cache
+operation Device getCollectionsRequiringVideo() : Set {
+	var videoCollections : Set;
+	for (collection in self.collections) {
+		var containsVideo = collection.members.exists(i| i.isTypeOf(Video));
+		if (containsVideo) {
+			videoCollections.add(collection);
+		}
+	}
+	return videoCollections;
+}
+
+operation MediaCollection getFirstUniqueName() : String {
+	var i : Integer = 0;
+	while (MediaCollection.all.select(i|i.name == self.name + i).size() > 0) {
+		i = i + 1;
+	}
+	return self.name + i;
+}

@@ -1,0 +1,62 @@
+/*
+ * 
+ */
+package MediaLibrary.diagram.providers.assistants;
+
+/**
+ * @generated
+ */
+public class MediaLibraryModelingAssistantProviderOfStoreEditPart extends MediaLibrary.diagram.providers.MediaLibraryModelingAssistantProvider {
+
+					
+	
+		/**
+ * @generated
+ */
+	@Override
+
+	public java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> getRelTypesOnTarget(org.eclipse.core.runtime.IAdaptable target) {
+		org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart targetEditPart =
+				(org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart) target.getAdapter(
+						org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart.class);
+		return doGetRelTypesOnTarget((MediaLibrary.diagram.edit.parts.StoreEditPart) targetEditPart);
+	}
+
+		/**
+ * @generated
+ */
+	public java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> doGetRelTypesOnTarget(MediaLibrary.diagram.edit.parts.StoreEditPart target) {
+		java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> types = new java.util.ArrayList<org.eclipse.gmf.runtime.emf.type.core.IElementType>(1);
+				types.add(MediaLibrary.diagram.providers.MediaLibraryElementTypes.ArtifactOrigin_4003);
+				return types;
+	}
+
+		/**
+ * @generated
+ */
+	@Override
+
+	public java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> getTypesForSource(org.eclipse.core.runtime.IAdaptable target,
+			org.eclipse.gmf.runtime.emf.type.core.IElementType relationshipType) {
+		org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart targetEditPart =
+				(org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart) target.getAdapter(
+						org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart.class);
+		return doGetTypesForSource((MediaLibrary.diagram.edit.parts.StoreEditPart) targetEditPart, relationshipType);
+	}
+
+		/**
+ * @generated
+ */
+	public java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> doGetTypesForSource(MediaLibrary.diagram.edit.parts.StoreEditPart target, org.eclipse.gmf.runtime.emf.type.core.IElementType relationshipType) {
+		java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> types = new java.util.ArrayList<org.eclipse.gmf.runtime.emf.type.core.IElementType>();
+				if (relationshipType == MediaLibrary.diagram.providers.MediaLibraryElementTypes.ArtifactOrigin_4003) {
+						types.add(MediaLibrary.diagram.providers.MediaLibraryElementTypes.AudioBook_3002);
+						types.add(MediaLibrary.diagram.providers.MediaLibraryElementTypes.MusicTrack_3003);
+						types.add(MediaLibrary.diagram.providers.MediaLibraryElementTypes.Video_3004);
+						types.add(MediaLibrary.diagram.providers.MediaLibraryElementTypes.Image_3005);
+						types.add(MediaLibrary.diagram.providers.MediaLibraryElementTypes.Ebook_3006);
+					}
+				return types;
+	}
+
+	}

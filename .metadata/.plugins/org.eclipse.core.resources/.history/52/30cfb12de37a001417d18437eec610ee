@@ -1,0 +1,8 @@
+pre {
+  "Running ETL".println();
+}
+
+rule CopyAllButEbook 
+transform t : MediaCollection to n : MediaCollection {
+	n.name = t.name;	  
+}

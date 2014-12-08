@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:MediaLibrary="MediaLibrary">
+  <MediaLibrary:Ecosystem>
+    <libraries name="My Library">
+      <collections name="My Tunes" host="/0/@devices.0" syncedDevices="/0/@devices.0 /0/@devices.1">
+        <members xsi:type="MediaLibrary:MusicTrack" name="Tune #2" origin="/0/@mediaSources.3" duration="53452"/>
+        <members xsi:type="MediaLibrary:MusicTrack" name="Tune #3" origin="/0/@mediaSources.3" duration="4626"/>
+      </collections>
+      <collections name="Misc." host="/0/@devices.1" syncedDevices="/0/@devices.1">
+        <members xsi:type="MediaLibrary:Video" name="Baby vid #1" origin="/0/@mediaSources.2"/>
+        <members xsi:type="MediaLibrary:Ebook" name="The Glass Bead Game" origin="/0/@mediaSources.1"/>
+        <members xsi:type="MediaLibrary:AudioBook" name="Tale of Two Cities" origin="/0/@mediaSources.0"/>
+      </collections>
+    </libraries>
+    <devices xsi:type="MediaLibrary:Smartphone" name="Martphone" hostOf="/0/@libraries.0/@collections.0 /3" collections="/0/@libraries.0/@collections.0 /3"/>
+    <devices xsi:type="MediaLibrary:Computer" name="My PC" hostOf="/0/@libraries.0/@collections.1 /4" collections="/0/@libraries.0/@collections.0 /0/@libraries.0/@collections.1 /3 /4"/>
+    <mediaSources xsi:type="MediaLibrary:Store" name="Audible" contents="/0/@libraries.0/@collections.1/@members.2"/>
+    <mediaSources xsi:type="MediaLibrary:Store" name="Amazon" contents="/0/@libraries.0/@collections.1/@members.1"/>
+    <mediaSources xsi:type="MediaLibrary:ExternalSource" name="My HD" contents="/0/@libraries.0/@collections.1/@members.0" sourceType="HDD"/>
+    <mediaSources xsi:type="MediaLibrary:ExternalSource" name="Awesome Mixtape" contents="/0/@libraries.0/@collections.0/@members.1 /0/@libraries.0/@collections.0/@members.0 /1/@members.0" sourceType="CASSETTE"/>
+  </MediaLibrary:Ecosystem>
+  <MediaLibrary:MediaCollection name="My Tunes">
+    <members xsi:type="MediaLibrary:MusicTrack" name="Tune #1" origin="/0/@mediaSources.3" duration="1999"/>
+  </MediaLibrary:MediaCollection>
+  <MediaLibrary:MediaCollection/>
+  <MediaLibrary:MediaCollection name="My Tunes" host="/0/@devices.0" syncedDevices="/0/@devices.0 /0/@devices.1"/>
+  <MediaLibrary:MediaCollection name="Misc." host="/0/@devices.1" syncedDevices="/0/@devices.1"/>
+  <MediaLibrary:MediaCollection name="My Tunes"/>
+  <MediaLibrary:MediaCollection/>
+</xmi:XMI>

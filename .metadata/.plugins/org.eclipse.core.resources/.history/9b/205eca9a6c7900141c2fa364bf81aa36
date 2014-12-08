@@ -1,0 +1,116 @@
+/*
+ * 
+ */
+package MediaLibrary.diagram.providers.assistants;
+
+/**
+ * @generated
+ */
+public class MediaLibraryModelingAssistantProviderOfMediaCollectionEditPart extends MediaLibrary.diagram.providers.MediaLibraryModelingAssistantProvider {
+
+					
+			/**
+ * @generated
+ */
+	@Override
+
+	public java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> getRelTypesOnSource(org.eclipse.core.runtime.IAdaptable source) {
+		org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart sourceEditPart =
+				(org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart) source.getAdapter(
+						org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart.class);
+		return doGetRelTypesOnSource((MediaLibrary.diagram.edit.parts.MediaCollectionEditPart) sourceEditPart);
+	}
+	
+		/**
+ * @generated
+ */
+	public java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> doGetRelTypesOnSource(MediaLibrary.diagram.edit.parts.MediaCollectionEditPart source) {
+		java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> types = new java.util.ArrayList<org.eclipse.gmf.runtime.emf.type.core.IElementType>(2);
+				types.add(MediaLibrary.diagram.providers.MediaLibraryElementTypes.MediaCollectionHost_4001);
+				types.add(MediaLibrary.diagram.providers.MediaLibraryElementTypes.MediaCollectionSyncedDevices_4002);
+				return types;
+	}
+	
+		/**
+ * @generated
+ */
+	@Override
+
+	public java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> getRelTypesOnSourceAndTarget(
+			org.eclipse.core.runtime.IAdaptable source, org.eclipse.core.runtime.IAdaptable target) {
+		org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart sourceEditPart =
+				(org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart) source.getAdapter(
+						org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart.class);
+		org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart targetEditPart =
+				(org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart) target.getAdapter(
+						org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart.class);
+		return doGetRelTypesOnSourceAndTarget((MediaLibrary.diagram.edit.parts.MediaCollectionEditPart) sourceEditPart, targetEditPart);
+	}
+
+		/**
+ * @generated
+ */
+	public java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> doGetRelTypesOnSourceAndTarget(MediaLibrary.diagram.edit.parts.MediaCollectionEditPart source, org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart targetEditPart) {
+		java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> types = new java.util.LinkedList<org.eclipse.gmf.runtime.emf.type.core.IElementType>();
+							if (targetEditPart instanceof MediaLibrary.diagram.edit.parts.TabletEditPart) {
+			types.add(MediaLibrary.diagram.providers.MediaLibraryElementTypes.MediaCollectionHost_4001);
+		}
+					if (targetEditPart instanceof MediaLibrary.diagram.edit.parts.ComputerEditPart) {
+			types.add(MediaLibrary.diagram.providers.MediaLibraryElementTypes.MediaCollectionHost_4001);
+		}
+					if (targetEditPart instanceof MediaLibrary.diagram.edit.parts.SmartphoneEditPart) {
+			types.add(MediaLibrary.diagram.providers.MediaLibraryElementTypes.MediaCollectionHost_4001);
+		}
+					if (targetEditPart instanceof MediaLibrary.diagram.edit.parts.EReaderEditPart) {
+			types.add(MediaLibrary.diagram.providers.MediaLibraryElementTypes.MediaCollectionHost_4001);
+		}
+										if (targetEditPart instanceof MediaLibrary.diagram.edit.parts.TabletEditPart) {
+			types.add(MediaLibrary.diagram.providers.MediaLibraryElementTypes.MediaCollectionSyncedDevices_4002);
+		}
+					if (targetEditPart instanceof MediaLibrary.diagram.edit.parts.ComputerEditPart) {
+			types.add(MediaLibrary.diagram.providers.MediaLibraryElementTypes.MediaCollectionSyncedDevices_4002);
+		}
+					if (targetEditPart instanceof MediaLibrary.diagram.edit.parts.SmartphoneEditPart) {
+			types.add(MediaLibrary.diagram.providers.MediaLibraryElementTypes.MediaCollectionSyncedDevices_4002);
+		}
+					if (targetEditPart instanceof MediaLibrary.diagram.edit.parts.EReaderEditPart) {
+			types.add(MediaLibrary.diagram.providers.MediaLibraryElementTypes.MediaCollectionSyncedDevices_4002);
+		}
+							return types;
+	}
+
+			/**
+ * @generated
+ */
+	@Override
+
+	public java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> getTypesForTarget(org.eclipse.core.runtime.IAdaptable source,
+			org.eclipse.gmf.runtime.emf.type.core.IElementType relationshipType) {
+		org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart sourceEditPart =
+				(org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart) source.getAdapter(
+						org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart.class);
+		return doGetTypesForTarget((MediaLibrary.diagram.edit.parts.MediaCollectionEditPart) sourceEditPart, relationshipType);
+	}
+	
+		/**
+ * @generated
+ */
+	public java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> doGetTypesForTarget(MediaLibrary.diagram.edit.parts.MediaCollectionEditPart source, org.eclipse.gmf.runtime.emf.type.core.IElementType relationshipType) {
+		java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> types = new java.util.ArrayList<org.eclipse.gmf.runtime.emf.type.core.IElementType>();
+				if (relationshipType == MediaLibrary.diagram.providers.MediaLibraryElementTypes.MediaCollectionHost_4001) {
+						types.add(MediaLibrary.diagram.providers.MediaLibraryElementTypes.Tablet_2001);
+						types.add(MediaLibrary.diagram.providers.MediaLibraryElementTypes.Computer_2002);
+						types.add(MediaLibrary.diagram.providers.MediaLibraryElementTypes.Smartphone_2003);
+						types.add(MediaLibrary.diagram.providers.MediaLibraryElementTypes.EReader_2004);
+					}
+		 else 		if (relationshipType == MediaLibrary.diagram.providers.MediaLibraryElementTypes.MediaCollectionSyncedDevices_4002) {
+						types.add(MediaLibrary.diagram.providers.MediaLibraryElementTypes.Tablet_2001);
+						types.add(MediaLibrary.diagram.providers.MediaLibraryElementTypes.Computer_2002);
+						types.add(MediaLibrary.diagram.providers.MediaLibraryElementTypes.Smartphone_2003);
+						types.add(MediaLibrary.diagram.providers.MediaLibraryElementTypes.EReader_2004);
+					}
+				return types;
+	}
+
+
+	}

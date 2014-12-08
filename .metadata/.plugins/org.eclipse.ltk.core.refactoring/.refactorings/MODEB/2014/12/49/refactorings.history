@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 2 elements to &apos;MediaLibrary/src&apos;&#x0A;- Original project: &apos;MODEB&apos;&#x0A;- Destination element: &apos;MediaLibrary/src&apos;&#x0A;- Original elements:&#x0A;     validation.evl&#x0A;     queries.eol&#x0A;- Update references to refactored element" description="Move files" destination="=MediaLibrary/src" element1="validation.evl" element2="queries.eol" files="2" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1417446643982" units="0" version="1.0"/>
+</session>

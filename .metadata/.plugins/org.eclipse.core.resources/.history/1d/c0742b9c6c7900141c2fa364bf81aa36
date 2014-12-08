@@ -1,0 +1,378 @@
+/*
+ * 
+ */
+package MediaLibrary.diagram.providers;
+
+/**
+ * @generated
+ */
+public class MediaLibraryParserProvider extends org.eclipse.gmf.runtime.common.core.service.AbstractProvider implements org.eclipse.gmf.runtime.common.ui.services.parser.IParserProvider {
+	
+	
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser tabletName_5001Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getTabletName_5001Parser() {
+		if (tabletName_5001Parser == null) {
+						org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				MediaLibrary.MediaLibraryPackage.eINSTANCE.getDevice_Name()
+			};
+				MediaLibrary.diagram.parsers.MessageFormatParser parser = new MediaLibrary.diagram.parsers.MessageFormatParser(features);
+								tabletName_5001Parser = parser;
+		}
+		return tabletName_5001Parser;
+	}
+
+
+	
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser computerName_5002Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getComputerName_5002Parser() {
+		if (computerName_5002Parser == null) {
+						org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				MediaLibrary.MediaLibraryPackage.eINSTANCE.getDevice_Name()
+			};
+				MediaLibrary.diagram.parsers.MessageFormatParser parser = new MediaLibrary.diagram.parsers.MessageFormatParser(features);
+								computerName_5002Parser = parser;
+		}
+		return computerName_5002Parser;
+	}
+
+
+	
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser smartphoneName_5003Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getSmartphoneName_5003Parser() {
+		if (smartphoneName_5003Parser == null) {
+						org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				MediaLibrary.MediaLibraryPackage.eINSTANCE.getDevice_Name()
+			};
+				MediaLibrary.diagram.parsers.MessageFormatParser parser = new MediaLibrary.diagram.parsers.MessageFormatParser(features);
+								smartphoneName_5003Parser = parser;
+		}
+		return smartphoneName_5003Parser;
+	}
+
+
+	
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser eReaderName_5004Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getEReaderName_5004Parser() {
+		if (eReaderName_5004Parser == null) {
+						org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				MediaLibrary.MediaLibraryPackage.eINSTANCE.getDevice_Name()
+			};
+				MediaLibrary.diagram.parsers.MessageFormatParser parser = new MediaLibrary.diagram.parsers.MessageFormatParser(features);
+								eReaderName_5004Parser = parser;
+		}
+		return eReaderName_5004Parser;
+	}
+
+
+	
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser externalSourceName_5005Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getExternalSourceName_5005Parser() {
+		if (externalSourceName_5005Parser == null) {
+						org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				MediaLibrary.MediaLibraryPackage.eINSTANCE.getMediaSource_Name()
+			};
+				MediaLibrary.diagram.parsers.MessageFormatParser parser = new MediaLibrary.diagram.parsers.MessageFormatParser(features);
+								externalSourceName_5005Parser = parser;
+		}
+		return externalSourceName_5005Parser;
+	}
+
+
+	
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser storeName_5006Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getStoreName_5006Parser() {
+		if (storeName_5006Parser == null) {
+						org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				MediaLibrary.MediaLibraryPackage.eINSTANCE.getMediaSource_Name()
+			};
+				MediaLibrary.diagram.parsers.MessageFormatParser parser = new MediaLibrary.diagram.parsers.MessageFormatParser(features);
+								storeName_5006Parser = parser;
+		}
+		return storeName_5006Parser;
+	}
+
+
+	
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser libraryName_5013Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getLibraryName_5013Parser() {
+		if (libraryName_5013Parser == null) {
+						org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				MediaLibrary.MediaLibraryPackage.eINSTANCE.getLibrary_Name()
+			};
+				MediaLibrary.diagram.parsers.MessageFormatParser parser = new MediaLibrary.diagram.parsers.MessageFormatParser(features);
+								libraryName_5013Parser = parser;
+		}
+		return libraryName_5013Parser;
+	}
+
+
+	
+	
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser mediaCollectionName_5012Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getMediaCollectionName_5012Parser() {
+		if (mediaCollectionName_5012Parser == null) {
+						org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				MediaLibrary.MediaLibraryPackage.eINSTANCE.getMediaCollection_Name()
+			};
+				MediaLibrary.diagram.parsers.MessageFormatParser parser = new MediaLibrary.diagram.parsers.MessageFormatParser(features);
+								mediaCollectionName_5012Parser = parser;
+		}
+		return mediaCollectionName_5012Parser;
+	}
+
+
+	
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser audioBookName_5007Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getAudioBookName_5007Parser() {
+		if (audioBookName_5007Parser == null) {
+						org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				MediaLibrary.MediaLibraryPackage.eINSTANCE.getArtifact_Name()
+			};
+				MediaLibrary.diagram.parsers.MessageFormatParser parser = new MediaLibrary.diagram.parsers.MessageFormatParser(features);
+								audioBookName_5007Parser = parser;
+		}
+		return audioBookName_5007Parser;
+	}
+
+
+	
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser musicTrackName_5008Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getMusicTrackName_5008Parser() {
+		if (musicTrackName_5008Parser == null) {
+						org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				MediaLibrary.MediaLibraryPackage.eINSTANCE.getArtifact_Name()
+			};
+				MediaLibrary.diagram.parsers.MessageFormatParser parser = new MediaLibrary.diagram.parsers.MessageFormatParser(features);
+								musicTrackName_5008Parser = parser;
+		}
+		return musicTrackName_5008Parser;
+	}
+
+
+	
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser videoName_5009Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getVideoName_5009Parser() {
+		if (videoName_5009Parser == null) {
+						org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				MediaLibrary.MediaLibraryPackage.eINSTANCE.getArtifact_Name()
+			};
+				MediaLibrary.diagram.parsers.MessageFormatParser parser = new MediaLibrary.diagram.parsers.MessageFormatParser(features);
+								videoName_5009Parser = parser;
+		}
+		return videoName_5009Parser;
+	}
+
+
+	
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser imageName_5010Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getImageName_5010Parser() {
+		if (imageName_5010Parser == null) {
+						org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				MediaLibrary.MediaLibraryPackage.eINSTANCE.getArtifact_Name()
+			};
+				MediaLibrary.diagram.parsers.MessageFormatParser parser = new MediaLibrary.diagram.parsers.MessageFormatParser(features);
+								imageName_5010Parser = parser;
+		}
+		return imageName_5010Parser;
+	}
+
+
+	
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser ebookName_5011Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getEbookName_5011Parser() {
+		if (ebookName_5011Parser == null) {
+						org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				MediaLibrary.MediaLibraryPackage.eINSTANCE.getArtifact_Name()
+			};
+				MediaLibrary.diagram.parsers.MessageFormatParser parser = new MediaLibrary.diagram.parsers.MessageFormatParser(features);
+								ebookName_5011Parser = parser;
+		}
+		return ebookName_5011Parser;
+	}
+
+
+	
+
+		/**
+ * @generated
+ */
+	protected org.eclipse.gmf.runtime.common.ui.services.parser.IParser getParser(int visualID) {
+		switch (visualID) {
+				case MediaLibrary.diagram.edit.parts.TabletNameEditPart.VISUAL_ID: return getTabletName_5001Parser();
+		case MediaLibrary.diagram.edit.parts.ComputerNameEditPart.VISUAL_ID: return getComputerName_5002Parser();
+		case MediaLibrary.diagram.edit.parts.SmartphoneNameEditPart.VISUAL_ID: return getSmartphoneName_5003Parser();
+		case MediaLibrary.diagram.edit.parts.EReaderNameEditPart.VISUAL_ID: return getEReaderName_5004Parser();
+		case MediaLibrary.diagram.edit.parts.ExternalSourceNameEditPart.VISUAL_ID: return getExternalSourceName_5005Parser();
+		case MediaLibrary.diagram.edit.parts.StoreNameEditPart.VISUAL_ID: return getStoreName_5006Parser();
+		case MediaLibrary.diagram.edit.parts.LibraryNameEditPart.VISUAL_ID: return getLibraryName_5013Parser();
+				case MediaLibrary.diagram.edit.parts.MediaCollectionNameEditPart.VISUAL_ID: return getMediaCollectionName_5012Parser();
+		case MediaLibrary.diagram.edit.parts.AudioBookNameEditPart.VISUAL_ID: return getAudioBookName_5007Parser();
+		case MediaLibrary.diagram.edit.parts.MusicTrackNameEditPart.VISUAL_ID: return getMusicTrackName_5008Parser();
+		case MediaLibrary.diagram.edit.parts.VideoNameEditPart.VISUAL_ID: return getVideoName_5009Parser();
+		case MediaLibrary.diagram.edit.parts.ImageNameEditPart.VISUAL_ID: return getImageName_5010Parser();
+		case MediaLibrary.diagram.edit.parts.EbookNameEditPart.VISUAL_ID: return getEbookName_5011Parser();
+				}
+		return null;
+	}
+		/**
+ * Utility method that consults ParserService
+ * @generated
+ */
+	public static org.eclipse.gmf.runtime.common.ui.services.parser.IParser getParser(org.eclipse.gmf.runtime.emf.type.core.IElementType type, org.eclipse.emf.ecore.EObject object, String parserHint) {
+		return org.eclipse.gmf.runtime.common.ui.services.parser.ParserService.getInstance().getParser(new HintAdapter(type, object, parserHint));
+	}
+		/**
+ * @generated
+ */
+	public org.eclipse.gmf.runtime.common.ui.services.parser.IParser getParser(
+			org.eclipse.core.runtime.IAdaptable hint) {
+		String vid = (String) hint.getAdapter(String.class);
+		if (vid != null) {
+			return getParser(MediaLibrary.diagram.part.MediaLibraryVisualIDRegistry.getVisualID(vid));
+		}
+		org.eclipse.gmf.runtime.notation.View view =
+				(org.eclipse.gmf.runtime.notation.View) hint.getAdapter(org.eclipse.gmf.runtime.notation.View.class);
+		if (view != null) {
+			return getParser(MediaLibrary.diagram.part.MediaLibraryVisualIDRegistry.getVisualID(view));
+		}
+		return null;
+	}
+
+		/**
+ * @generated
+ */
+	public boolean provides(org.eclipse.gmf.runtime.common.core.service.IOperation operation) {
+		if (operation instanceof org.eclipse.gmf.runtime.common.ui.services.parser.GetParserOperation) {
+			org.eclipse.core.runtime.IAdaptable hint =
+					((org.eclipse.gmf.runtime.common.ui.services.parser.GetParserOperation) operation).getHint();
+			if (MediaLibrary.diagram.providers.MediaLibraryElementTypes.getElement(hint) == null) {
+				return false;
+			}
+			return getParser(hint) != null;
+		}
+		return false;
+	}
+
+		/**
+ * @generated
+ */
+	private static class HintAdapter extends org.eclipse.gmf.runtime.emf.ui.services.parser.ParserHintAdapter {
+
+		/**
+ * @generated
+ */
+		private final org.eclipse.gmf.runtime.emf.type.core.IElementType elementType;
+
+		/**
+ * @generated
+ */
+		public HintAdapter(org.eclipse.gmf.runtime.emf.type.core.IElementType type,
+				org.eclipse.emf.ecore.EObject object, String parserHint) {
+			super(object, parserHint);
+			assert type != null;
+			elementType = type;
+		}
+
+		/**
+ * @generated
+ */
+		public Object getAdapter(Class adapter) {
+			if (org.eclipse.gmf.runtime.emf.type.core.IElementType.class.equals(adapter)) {
+				return elementType;
+			}
+			return super.getAdapter(adapter);
+		}
+	}
+
+	}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated MediaLibrary -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="MediaLibrary.presentation.MediaLibraryModelWizardID"
+            name="%_UI_MediaLibraryModelWizard_label"
+            class="MediaLibrary.presentation.MediaLibraryModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/MediaLibraryModelFile.gif">
+         <description>%_UI_MediaLibraryModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated MediaLibrary -->
+      <editor
+            id="MediaLibrary.presentation.MediaLibraryEditorID"
+            name="%_UI_MediaLibraryEditor_label"
+            icon="icons/full/obj16/MediaLibraryModelFile.gif"
+            extensions="medialibrary"
+            class="MediaLibrary.presentation.MediaLibraryEditor"
+            contributorClass="MediaLibrary.presentation.MediaLibraryActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

@@ -1,0 +1,17 @@
+/*
+ * 
+ */
+package MediaLibrary.diagram.preferences;
+
+/**
+ * @generated
+ */
+public class DiagramConnectionsPreferencePage extends org.eclipse.gmf.runtime.diagram.ui.preferences.ConnectionsPreferencePage {
+
+	/**
+ * @generated
+ */
+	public DiagramConnectionsPreferencePage() {
+		setPreferenceStore(MediaLibrary.diagram.part.MediaLibraryDiagramEditorPlugin.getInstance().getPreferenceStore());
+	}
+}

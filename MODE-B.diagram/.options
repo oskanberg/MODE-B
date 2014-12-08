@@ -1,0 +1,7 @@
+# Tracing options for the MODE-B.diagram plug-in
+
+# Common issues
+MODE-B.diagram/debug=false
+
+# Visual IDs
+MODE-B.diagram/debug/visualID=false
