@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MediaLibrary:Ecosystem xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:MediaLibrary="MediaLibrary">
+  <libraries name="My Library">
+    <collections name="My Collection" host="//@devices.0" syncedDevices="//@devices.0"/>
+  </libraries>
+  <devices xsi:type="MediaLibrary:Smartphone" name="My Smartphone" hostOf="//@libraries.0/@collections.0" collections="//@libraries.0/@collections.0"/>
+</MediaLibrary:Ecosystem>

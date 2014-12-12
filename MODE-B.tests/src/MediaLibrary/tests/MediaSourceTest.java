@@ -12,15 +12,7 @@ import junit.framework.TestCase;
  * <!-- end-user-doc -->
  * @generated
  */
-public abstract class MediaSourceTest extends TestCase {
-
-	/**
-	 * The fixture for this Media Source test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected MediaSource fixture = null;
+public abstract class MediaSourceTest extends NamedElementTest {
 
 	/**
 	 * Constructs a new Media Source test case with the given name.
@@ -33,23 +25,14 @@ public abstract class MediaSourceTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Media Source test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(MediaSource fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Media Source test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected MediaSource getFixture() {
-		return fixture;
+		return (MediaSource)fixture;
 	}
 
 } //MediaSourceTest

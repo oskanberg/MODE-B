@@ -33,7 +33,7 @@ public class MediaLibraryParserProvider extends AbstractProvider implements
 	private IParser getTabletName_5001Parser() {
 		if (tabletName_5001Parser == null) {
 			EAttribute[] features = new EAttribute[] { MediaLibrary.MediaLibraryPackage.eINSTANCE
-					.getDevice_Name() };
+					.getNamedElement_Name() };
 			MediaLibrary.diagram.parsers.MessageFormatParser parser = new MediaLibrary.diagram.parsers.MessageFormatParser(
 					features);
 			tabletName_5001Parser = parser;
@@ -52,7 +52,7 @@ public class MediaLibraryParserProvider extends AbstractProvider implements
 	private IParser getComputerName_5002Parser() {
 		if (computerName_5002Parser == null) {
 			EAttribute[] features = new EAttribute[] { MediaLibrary.MediaLibraryPackage.eINSTANCE
-					.getDevice_Name() };
+					.getNamedElement_Name() };
 			MediaLibrary.diagram.parsers.MessageFormatParser parser = new MediaLibrary.diagram.parsers.MessageFormatParser(
 					features);
 			computerName_5002Parser = parser;
@@ -71,7 +71,7 @@ public class MediaLibraryParserProvider extends AbstractProvider implements
 	private IParser getSmartphoneName_5003Parser() {
 		if (smartphoneName_5003Parser == null) {
 			EAttribute[] features = new EAttribute[] { MediaLibrary.MediaLibraryPackage.eINSTANCE
-					.getDevice_Name() };
+					.getNamedElement_Name() };
 			MediaLibrary.diagram.parsers.MessageFormatParser parser = new MediaLibrary.diagram.parsers.MessageFormatParser(
 					features);
 			smartphoneName_5003Parser = parser;
@@ -90,7 +90,7 @@ public class MediaLibraryParserProvider extends AbstractProvider implements
 	private IParser getEReaderName_5004Parser() {
 		if (eReaderName_5004Parser == null) {
 			EAttribute[] features = new EAttribute[] { MediaLibrary.MediaLibraryPackage.eINSTANCE
-					.getDevice_Name() };
+					.getNamedElement_Name() };
 			MediaLibrary.diagram.parsers.MessageFormatParser parser = new MediaLibrary.diagram.parsers.MessageFormatParser(
 					features);
 			eReaderName_5004Parser = parser;
@@ -109,7 +109,7 @@ public class MediaLibraryParserProvider extends AbstractProvider implements
 	private IParser getExternalSourceName_5005Parser() {
 		if (externalSourceName_5005Parser == null) {
 			EAttribute[] features = new EAttribute[] { MediaLibrary.MediaLibraryPackage.eINSTANCE
-					.getMediaSource_Name() };
+					.getNamedElement_Name() };
 			MediaLibrary.diagram.parsers.MessageFormatParser parser = new MediaLibrary.diagram.parsers.MessageFormatParser(
 					features);
 			externalSourceName_5005Parser = parser;
@@ -128,7 +128,7 @@ public class MediaLibraryParserProvider extends AbstractProvider implements
 	private IParser getStoreName_5006Parser() {
 		if (storeName_5006Parser == null) {
 			EAttribute[] features = new EAttribute[] { MediaLibrary.MediaLibraryPackage.eINSTANCE
-					.getMediaSource_Name() };
+					.getNamedElement_Name() };
 			MediaLibrary.diagram.parsers.MessageFormatParser parser = new MediaLibrary.diagram.parsers.MessageFormatParser(
 					features);
 			storeName_5006Parser = parser;
@@ -147,7 +147,7 @@ public class MediaLibraryParserProvider extends AbstractProvider implements
 	private IParser getLibraryName_5013Parser() {
 		if (libraryName_5013Parser == null) {
 			EAttribute[] features = new EAttribute[] { MediaLibrary.MediaLibraryPackage.eINSTANCE
-					.getLibrary_Name() };
+					.getNamedElement_Name() };
 			MediaLibrary.diagram.parsers.MessageFormatParser parser = new MediaLibrary.diagram.parsers.MessageFormatParser(
 					features);
 			libraryName_5013Parser = parser;
@@ -166,7 +166,7 @@ public class MediaLibraryParserProvider extends AbstractProvider implements
 	private IParser getMediaCollectionName_5012Parser() {
 		if (mediaCollectionName_5012Parser == null) {
 			EAttribute[] features = new EAttribute[] { MediaLibrary.MediaLibraryPackage.eINSTANCE
-					.getMediaCollection_Name() };
+					.getNamedElement_Name() };
 			MediaLibrary.diagram.parsers.MessageFormatParser parser = new MediaLibrary.diagram.parsers.MessageFormatParser(
 					features);
 			mediaCollectionName_5012Parser = parser;
@@ -185,7 +185,7 @@ public class MediaLibraryParserProvider extends AbstractProvider implements
 	private IParser getAudioBookName_5007Parser() {
 		if (audioBookName_5007Parser == null) {
 			EAttribute[] features = new EAttribute[] { MediaLibrary.MediaLibraryPackage.eINSTANCE
-					.getArtifact_Name() };
+					.getNamedElement_Name() };
 			MediaLibrary.diagram.parsers.MessageFormatParser parser = new MediaLibrary.diagram.parsers.MessageFormatParser(
 					features);
 			audioBookName_5007Parser = parser;
@@ -204,7 +204,7 @@ public class MediaLibraryParserProvider extends AbstractProvider implements
 	private IParser getMusicTrackName_5008Parser() {
 		if (musicTrackName_5008Parser == null) {
 			EAttribute[] features = new EAttribute[] { MediaLibrary.MediaLibraryPackage.eINSTANCE
-					.getArtifact_Name() };
+					.getNamedElement_Name() };
 			MediaLibrary.diagram.parsers.MessageFormatParser parser = new MediaLibrary.diagram.parsers.MessageFormatParser(
 					features);
 			musicTrackName_5008Parser = parser;
@@ -223,7 +223,7 @@ public class MediaLibraryParserProvider extends AbstractProvider implements
 	private IParser getVideoName_5009Parser() {
 		if (videoName_5009Parser == null) {
 			EAttribute[] features = new EAttribute[] { MediaLibrary.MediaLibraryPackage.eINSTANCE
-					.getArtifact_Name() };
+					.getNamedElement_Name() };
 			MediaLibrary.diagram.parsers.MessageFormatParser parser = new MediaLibrary.diagram.parsers.MessageFormatParser(
 					features);
 			videoName_5009Parser = parser;
@@ -242,7 +242,7 @@ public class MediaLibraryParserProvider extends AbstractProvider implements
 	private IParser getImageName_5010Parser() {
 		if (imageName_5010Parser == null) {
 			EAttribute[] features = new EAttribute[] { MediaLibrary.MediaLibraryPackage.eINSTANCE
-					.getArtifact_Name() };
+					.getNamedElement_Name() };
 			MediaLibrary.diagram.parsers.MessageFormatParser parser = new MediaLibrary.diagram.parsers.MessageFormatParser(
 					features);
 			imageName_5010Parser = parser;
@@ -261,7 +261,7 @@ public class MediaLibraryParserProvider extends AbstractProvider implements
 	private IParser getEbookName_5011Parser() {
 		if (ebookName_5011Parser == null) {
 			EAttribute[] features = new EAttribute[] { MediaLibrary.MediaLibraryPackage.eINSTANCE
-					.getArtifact_Name() };
+					.getNamedElement_Name() };
 			MediaLibrary.diagram.parsers.MessageFormatParser parser = new MediaLibrary.diagram.parsers.MessageFormatParser(
 					features);
 			ebookName_5011Parser = parser;

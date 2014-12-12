@@ -14,7 +14,6 @@ import org.eclipse.emf.ecore.EObject;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link MediaLibrary.MediaSource#getName <em>Name</em>}</li>
  *   <li>{@link MediaLibrary.MediaSource#getContents <em>Contents</em>}</li>
  * </ul>
  * </p>
@@ -24,33 +23,7 @@ import org.eclipse.emf.ecore.EObject;
  *        annotation="gmf.node label='name'"
  * @generated
  */
-public interface MediaSource extends EObject {
-	/**
-	 * Returns the value of the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Name</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Name</em>' attribute.
-	 * @see #setName(String)
-	 * @see MediaLibrary.MediaLibraryPackage#getMediaSource_Name()
-	 * @model
-	 * @generated
-	 */
-	String getName();
-
-	/**
-	 * Sets the value of the '{@link MediaLibrary.MediaSource#getName <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Name</em>' attribute.
-	 * @see #getName()
-	 * @generated
-	 */
-	void setName(String value);
-
+public interface MediaSource extends NamedElement {
 	/**
 	 * Returns the value of the '<em><b>Contents</b></em>' reference list.
 	 * The list contents are of type {@link MediaLibrary.Artifact}.

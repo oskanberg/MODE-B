@@ -13,23 +13,23 @@
       <genEnumLiterals ecoreEnumLiteral="MediaLibrary.ecore#//SourceType/HDD"/>
       <genEnumLiterals ecoreEnumLiteral="MediaLibrary.ecore#//SourceType/OTHER"/>
     </genEnums>
+    <genClasses image="false" ecoreClass="MediaLibrary.ecore#//NamedElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MediaLibrary.ecore#//NamedElement/name"/>
+    </genClasses>
     <genClasses ecoreClass="MediaLibrary.ecore#//Ecosystem">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MediaLibrary.ecore#//Ecosystem/libraries"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MediaLibrary.ecore#//Ecosystem/devices"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MediaLibrary.ecore#//Ecosystem/mediaSources"/>
     </genClasses>
     <genClasses ecoreClass="MediaLibrary.ecore#//Library">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MediaLibrary.ecore#//Library/name"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MediaLibrary.ecore#//Library/collections"/>
     </genClasses>
     <genClasses ecoreClass="MediaLibrary.ecore#//MediaCollection">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MediaLibrary.ecore#//MediaCollection/name"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MediaLibrary.ecore#//MediaCollection/members"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MediaLibrary.ecore#//MediaCollection/host"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MediaLibrary.ecore#//MediaCollection/syncedDevices"/>
     </genClasses>
     <genClasses image="false" ecoreClass="MediaLibrary.ecore#//Device">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MediaLibrary.ecore#//Device/name"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MediaLibrary.ecore#//Device/hostOf"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MediaLibrary.ecore#//Device/collections"/>
     </genClasses>
@@ -41,7 +41,6 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MediaLibrary.ecore#//EReader/audioEnabled"/>
     </genClasses>
     <genClasses image="false" ecoreClass="MediaLibrary.ecore#//Artifact">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MediaLibrary.ecore#//Artifact/name"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MediaLibrary.ecore#//Artifact/origin"/>
     </genClasses>
     <genClasses image="false" ecoreClass="MediaLibrary.ecore#//DurationArtifact">
@@ -53,7 +52,6 @@
     <genClasses ecoreClass="MediaLibrary.ecore#//Image"/>
     <genClasses ecoreClass="MediaLibrary.ecore#//Ebook"/>
     <genClasses image="false" ecoreClass="MediaLibrary.ecore#//MediaSource">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MediaLibrary.ecore#//MediaSource/name"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MediaLibrary.ecore#//MediaSource/contents"/>
     </genClasses>
     <genClasses ecoreClass="MediaLibrary.ecore#//ExternalSource">

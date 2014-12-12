@@ -31,7 +31,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link MediaLibrary.impl.MediaCollectionImpl#getName <em>Name</em>}</li>
  *   <li>{@link MediaLibrary.impl.MediaCollectionImpl#getMembers <em>Members</em>}</li>
  *   <li>{@link MediaLibrary.impl.MediaCollectionImpl#getHost <em>Host</em>}</li>
  *   <li>{@link MediaLibrary.impl.MediaCollectionImpl#getSyncedDevices <em>Synced Devices</em>}</li>
@@ -40,27 +39,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class MediaCollectionImpl extends EObjectImpl implements MediaCollection {
-	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NAME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
-
+public class MediaCollectionImpl extends NamedElementImpl implements MediaCollection {
 	/**
 	 * The cached value of the '{@link #getMembers() <em>Members</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -108,27 +87,6 @@ public class MediaCollectionImpl extends EObjectImpl implements MediaCollection 
 	@Override
 	protected EClass eStaticClass() {
 		return MediaLibraryPackage.Literals.MEDIA_COLLECTION;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, MediaLibraryPackage.MEDIA_COLLECTION__NAME, oldName, name));
 	}
 
 	/**
@@ -260,8 +218,6 @@ public class MediaCollectionImpl extends EObjectImpl implements MediaCollection 
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case MediaLibraryPackage.MEDIA_COLLECTION__NAME:
-				return getName();
 			case MediaLibraryPackage.MEDIA_COLLECTION__MEMBERS:
 				return getMembers();
 			case MediaLibraryPackage.MEDIA_COLLECTION__HOST:
@@ -282,9 +238,6 @@ public class MediaCollectionImpl extends EObjectImpl implements MediaCollection 
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case MediaLibraryPackage.MEDIA_COLLECTION__NAME:
-				setName((String)newValue);
-				return;
 			case MediaLibraryPackage.MEDIA_COLLECTION__MEMBERS:
 				getMembers().clear();
 				getMembers().addAll((Collection<? extends Artifact>)newValue);
@@ -308,9 +261,6 @@ public class MediaCollectionImpl extends EObjectImpl implements MediaCollection 
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case MediaLibraryPackage.MEDIA_COLLECTION__NAME:
-				setName(NAME_EDEFAULT);
-				return;
 			case MediaLibraryPackage.MEDIA_COLLECTION__MEMBERS:
 				getMembers().clear();
 				return;
@@ -332,8 +282,6 @@ public class MediaCollectionImpl extends EObjectImpl implements MediaCollection 
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case MediaLibraryPackage.MEDIA_COLLECTION__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case MediaLibraryPackage.MEDIA_COLLECTION__MEMBERS:
 				return members != null && !members.isEmpty();
 			case MediaLibraryPackage.MEDIA_COLLECTION__HOST:
@@ -342,22 +290,6 @@ public class MediaCollectionImpl extends EObjectImpl implements MediaCollection 
 				return syncedDevices != null && !syncedDevices.isEmpty();
 		}
 		return super.eIsSet(featureID);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String toString() {
-		if (eIsProxy()) return super.toString();
-
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(')');
-		return result.toString();
 	}
 
 } //MediaCollectionImpl

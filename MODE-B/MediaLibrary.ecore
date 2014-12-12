@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="MediaLibrary" nsURI="MediaLibrary" nsPrefix="MediaLibrary">
+  <eClassifiers xsi:type="ecore:EClass" name="NamedElement" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Ecosystem">
     <eAnnotations source="gmf.diagram"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="libraries" lowerBound="1"
@@ -10,21 +13,19 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="mediaSources" lowerBound="1"
         upperBound="-1" eType="#//MediaSource" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Library">
+  <eClassifiers xsi:type="ecore:EClass" name="Library" eSuperTypes="#//NamedElement">
     <eAnnotations source="gmf.node">
       <details key="label" value="name"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="collections" upperBound="-1"
         eType="#//MediaCollection" containment="true">
       <eAnnotations source="gmf.compartment"/>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="MediaCollection">
+  <eClassifiers xsi:type="ecore:EClass" name="MediaCollection" eSuperTypes="#//NamedElement">
     <eAnnotations source="gmf.node">
       <details key="label" value="name"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="members" lowerBound="1"
         upperBound="-1" eType="#//Artifact" containment="true">
       <eAnnotations source="gmf.compartment"/>
@@ -47,11 +48,10 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Device" abstract="true">
+  <eClassifiers xsi:type="ecore:EClass" name="Device" abstract="true" eSuperTypes="#//NamedElement">
     <eAnnotations source="gmf.node">
       <details key="label" value="name"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="hostOf" upperBound="-1"
         eType="#//MediaCollection" eOpposite="#//MediaCollection/host"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="collections" upperBound="-1"
@@ -64,11 +64,10 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="videoEnabled" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="audioEnabled" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Artifact" abstract="true">
+  <eClassifiers xsi:type="ecore:EClass" name="Artifact" abstract="true" eSuperTypes="#//NamedElement">
     <eAnnotations source="gmf.node">
       <details key="label" value="name"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="origin" lowerBound="1"
         eType="#//MediaSource" eOpposite="#//MediaSource/contents">
       <eAnnotations source="gmf.link">
@@ -87,11 +86,10 @@
   <eClassifiers xsi:type="ecore:EClass" name="Video" eSuperTypes="#//DurationArtifact"/>
   <eClassifiers xsi:type="ecore:EClass" name="Image" eSuperTypes="#//Artifact"/>
   <eClassifiers xsi:type="ecore:EClass" name="Ebook" eSuperTypes="#//Artifact"/>
-  <eClassifiers xsi:type="ecore:EClass" name="MediaSource" abstract="true">
+  <eClassifiers xsi:type="ecore:EClass" name="MediaSource" abstract="true" eSuperTypes="#//NamedElement">
     <eAnnotations source="gmf.node">
       <details key="label" value="name"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="contents" upperBound="-1"
         eType="#//Artifact" eOpposite="#//Artifact/origin"/>
   </eClassifiers>

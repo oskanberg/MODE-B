@@ -12,15 +12,7 @@ import junit.framework.TestCase;
  * <!-- end-user-doc -->
  * @generated
  */
-public abstract class ArtifactTest extends TestCase {
-
-	/**
-	 * The fixture for this Artifact test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Artifact fixture = null;
+public abstract class ArtifactTest extends NamedElementTest {
 
 	/**
 	 * Constructs a new Artifact test case with the given name.
@@ -33,23 +25,14 @@ public abstract class ArtifactTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Artifact test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Artifact fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Artifact test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Artifact getFixture() {
-		return fixture;
+		return (Artifact)fixture;
 	}
 
 } //ArtifactTest

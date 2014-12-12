@@ -21,7 +21,7 @@
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureMediaCollectionLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="MediaLibrary.genmodel#//MediaLibrary/MediaCollection/name"/>
+          <metaFeatures href="MediaLibrary.genmodel#//MediaLibrary/NamedElement/name"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -38,7 +38,7 @@
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureAudioBookLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="MediaLibrary.genmodel#//MediaLibrary/Artifact/name"/>
+          <metaFeatures href="MediaLibrary.genmodel#//MediaLibrary/NamedElement/name"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -55,7 +55,7 @@
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureMusicTrackLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="MediaLibrary.genmodel#//MediaLibrary/Artifact/name"/>
+          <metaFeatures href="MediaLibrary.genmodel#//MediaLibrary/NamedElement/name"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -72,7 +72,7 @@
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureVideoLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="MediaLibrary.genmodel#//MediaLibrary/Artifact/name"/>
+          <metaFeatures href="MediaLibrary.genmodel#//MediaLibrary/NamedElement/name"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -89,7 +89,7 @@
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureImageLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="MediaLibrary.genmodel#//MediaLibrary/Artifact/name"/>
+          <metaFeatures href="MediaLibrary.genmodel#//MediaLibrary/NamedElement/name"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -106,7 +106,7 @@
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureEbookLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="MediaLibrary.genmodel#//MediaLibrary/Artifact/name"/>
+          <metaFeatures href="MediaLibrary.genmodel#//MediaLibrary/NamedElement/name"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -123,7 +123,7 @@
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureTabletLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="MediaLibrary.genmodel#//MediaLibrary/Device/name"/>
+          <metaFeatures href="MediaLibrary.genmodel#//MediaLibrary/NamedElement/name"/>
         </modelFacet>
       </labels>
     </topLevelNodes>
@@ -140,7 +140,7 @@
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureComputerLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="MediaLibrary.genmodel#//MediaLibrary/Device/name"/>
+          <metaFeatures href="MediaLibrary.genmodel#//MediaLibrary/NamedElement/name"/>
         </modelFacet>
       </labels>
     </topLevelNodes>
@@ -157,7 +157,7 @@
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureSmartphoneLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="MediaLibrary.genmodel#//MediaLibrary/Device/name"/>
+          <metaFeatures href="MediaLibrary.genmodel#//MediaLibrary/NamedElement/name"/>
         </modelFacet>
       </labels>
     </topLevelNodes>
@@ -174,7 +174,7 @@
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureEReaderLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="MediaLibrary.genmodel#//MediaLibrary/Device/name"/>
+          <metaFeatures href="MediaLibrary.genmodel#//MediaLibrary/NamedElement/name"/>
         </modelFacet>
       </labels>
     </topLevelNodes>
@@ -191,7 +191,7 @@
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureExternalSourceLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="MediaLibrary.genmodel#//MediaLibrary/MediaSource/name"/>
+          <metaFeatures href="MediaLibrary.genmodel#//MediaLibrary/NamedElement/name"/>
         </modelFacet>
       </labels>
     </topLevelNodes>
@@ -208,7 +208,7 @@
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureStoreLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="MediaLibrary.genmodel#//MediaLibrary/MediaSource/name"/>
+          <metaFeatures href="MediaLibrary.genmodel#//MediaLibrary/NamedElement/name"/>
         </modelFacet>
       </labels>
     </topLevelNodes>
@@ -226,7 +226,7 @@
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureLibraryLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="MediaLibrary.genmodel#//MediaLibrary/Library/name"/>
+          <metaFeatures href="MediaLibrary.genmodel#//MediaLibrary/NamedElement/name"/>
         </modelFacet>
       </labels>
     </topLevelNodes>

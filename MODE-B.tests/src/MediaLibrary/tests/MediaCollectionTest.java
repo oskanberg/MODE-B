@@ -15,15 +15,7 @@ import junit.textui.TestRunner;
  * <!-- end-user-doc -->
  * @generated
  */
-public class MediaCollectionTest extends TestCase {
-
-	/**
-	 * The fixture for this Media Collection test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected MediaCollection fixture = null;
+public class MediaCollectionTest extends NamedElementTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -45,23 +37,14 @@ public class MediaCollectionTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Media Collection test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(MediaCollection fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Media Collection test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected MediaCollection getFixture() {
-		return fixture;
+		return (MediaCollection)fixture;
 	}
 
 	/**

@@ -22,34 +22,13 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link MediaLibrary.impl.ArtifactImpl#getName <em>Name</em>}</li>
  *   <li>{@link MediaLibrary.impl.ArtifactImpl#getOrigin <em>Origin</em>}</li>
  * </ul>
  * </p>
  *
  * @generated
  */
-public abstract class ArtifactImpl extends EObjectImpl implements Artifact {
-	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NAME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
-
+public abstract class ArtifactImpl extends NamedElementImpl implements Artifact {
 	/**
 	 * The cached value of the '{@link #getOrigin() <em>Origin</em>}' reference.
 	 * <!-- begin-user-doc -->
@@ -77,27 +56,6 @@ public abstract class ArtifactImpl extends EObjectImpl implements Artifact {
 	@Override
 	protected EClass eStaticClass() {
 		return MediaLibraryPackage.Literals.ARTIFACT;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, MediaLibraryPackage.ARTIFACT__NAME, oldName, name));
 	}
 
 	/**
@@ -198,8 +156,6 @@ public abstract class ArtifactImpl extends EObjectImpl implements Artifact {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case MediaLibraryPackage.ARTIFACT__NAME:
-				return getName();
 			case MediaLibraryPackage.ARTIFACT__ORIGIN:
 				if (resolve) return getOrigin();
 				return basicGetOrigin();
@@ -215,9 +171,6 @@ public abstract class ArtifactImpl extends EObjectImpl implements Artifact {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case MediaLibraryPackage.ARTIFACT__NAME:
-				setName((String)newValue);
-				return;
 			case MediaLibraryPackage.ARTIFACT__ORIGIN:
 				setOrigin((MediaSource)newValue);
 				return;
@@ -233,9 +186,6 @@ public abstract class ArtifactImpl extends EObjectImpl implements Artifact {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case MediaLibraryPackage.ARTIFACT__NAME:
-				setName(NAME_EDEFAULT);
-				return;
 			case MediaLibraryPackage.ARTIFACT__ORIGIN:
 				setOrigin((MediaSource)null);
 				return;
@@ -251,28 +201,10 @@ public abstract class ArtifactImpl extends EObjectImpl implements Artifact {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case MediaLibraryPackage.ARTIFACT__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case MediaLibraryPackage.ARTIFACT__ORIGIN:
 				return origin != null;
 		}
 		return super.eIsSet(featureID);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String toString() {
-		if (eIsProxy()) return super.toString();
-
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(')');
-		return result.toString();
 	}
 
 } //ArtifactImpl

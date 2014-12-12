@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:MediaLibrary="MediaLibrary" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_3PuRoIE9EeSBV_5e1fp_2w" type="MediaLibrary" name="EmptyCollection.medialibrary_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_8wUzcIE9EeSBV_5e1fp_2w" type="2007" fontName="Ubuntu">
+    <children xmi:type="notation:DecorationNode" xmi:id="_8wWBkIE9EeSBV_5e1fp_2w" type="5013"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_8wWBkYE9EeSBV_5e1fp_2w" type="7001">
+      <children xmi:type="notation:Shape" xmi:id="__NO6wIE9EeSBV_5e1fp_2w" type="3001" fontName="Ubuntu">
+        <children xmi:type="notation:DecorationNode" xmi:id="__NPh0IE9EeSBV_5e1fp_2w" type="5012"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="__NQI4IE9EeSBV_5e1fp_2w" type="7002"/>
+        <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="__NO6wYE9EeSBV_5e1fp_2w"/>
+        <element xmi:type="MediaLibrary:MediaCollection" href="EmptyCollection.medialibrary#//@libraries.0/@collections.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="__NO6woE9EeSBV_5e1fp_2w" x="15" y="8" width="371" height="271"/>
+      </children>
+    </children>
+    <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_8wUzcYE9EeSBV_5e1fp_2w"/>
+    <element xmi:type="MediaLibrary:Library" href="EmptyCollection.medialibrary#//@libraries.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8wUzcoE9EeSBV_5e1fp_2w" x="25" y="30" width="426" height="331"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_Elc8oIE-EeSBV_5e1fp_2w" type="2003" fontName="Ubuntu">
+    <children xmi:type="notation:DecorationNode" xmi:id="_EldjsIE-EeSBV_5e1fp_2w" type="5003"/>
+    <element xmi:type="MediaLibrary:Smartphone" href="EmptyCollection.medialibrary#//@devices.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Elc8oYE-EeSBV_5e1fp_2w" x="587" y="137"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_3PuRoYE9EeSBV_5e1fp_2w"/>
+  <element xmi:type="MediaLibrary:Ecosystem" href="EmptyCollection.medialibrary#/"/>
+  <edges xmi:type="notation:Edge" xmi:id="_GPsQ4IE-EeSBV_5e1fp_2w" type="4001" source="__NO6wIE9EeSBV_5e1fp_2w" target="_Elc8oIE-EeSBV_5e1fp_2w">
+    <children xmi:type="notation:DecorationNode" xmi:id="_GPs38IE-EeSBV_5e1fp_2w" type="6001">
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_GPs38YE-EeSBV_5e1fp_2w"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_GPs38oE-EeSBV_5e1fp_2w" x="-2" y="-11"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_GPsQ4YE-EeSBV_5e1fp_2w"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_GPsQ4oE-EeSBV_5e1fp_2w" fontName="Ubuntu"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_GPsQ44E-EeSBV_5e1fp_2w" points="[24, 1, -236, -20]$[283, 28, 23, 7]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_GPwiUIE-EeSBV_5e1fp_2w" id="(0.9353099730458221,0.2730627306273063)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_GPwiUYE-EeSBV_5e1fp_2w" id="(0.7526881720430108,0.7)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_IvFrgIE-EeSBV_5e1fp_2w" type="4002" source="__NO6wIE9EeSBV_5e1fp_2w" target="_Elc8oIE-EeSBV_5e1fp_2w">
+    <children xmi:type="notation:DecorationNode" xmi:id="_IvGSkIE-EeSBV_5e1fp_2w" type="6002">
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_IvGSkYE-EeSBV_5e1fp_2w"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_IvG5oIE-EeSBV_5e1fp_2w" x="1" y="7"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_IvFrgYE-EeSBV_5e1fp_2w" fontName="Ubuntu"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_IvFrgoE-EeSBV_5e1fp_2w" points="[89, -6, -212, 21]$[348, -19, 47, 8]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_IvJ88IE-EeSBV_5e1fp_2w" id="(0.7601078167115903,0.42066420664206644)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Km3sgIE-EeSBV_5e1fp_2w" id="(0.010752688172043012,0.9)"/>
+  </edges>
+</notation:Diagram>

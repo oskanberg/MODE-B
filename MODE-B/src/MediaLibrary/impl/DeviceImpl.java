@@ -29,7 +29,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link MediaLibrary.impl.DeviceImpl#getName <em>Name</em>}</li>
  *   <li>{@link MediaLibrary.impl.DeviceImpl#getHostOf <em>Host Of</em>}</li>
  *   <li>{@link MediaLibrary.impl.DeviceImpl#getCollections <em>Collections</em>}</li>
  * </ul>
@@ -37,27 +36,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public abstract class DeviceImpl extends EObjectImpl implements Device {
-	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NAME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
-
+public abstract class DeviceImpl extends NamedElementImpl implements Device {
 	/**
 	 * The cached value of the '{@link #getHostOf() <em>Host Of</em>}' reference list.
 	 * <!-- begin-user-doc -->
@@ -95,27 +74,6 @@ public abstract class DeviceImpl extends EObjectImpl implements Device {
 	@Override
 	protected EClass eStaticClass() {
 		return MediaLibraryPackage.Literals.DEVICE;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, MediaLibraryPackage.DEVICE__NAME, oldName, name));
 	}
 
 	/**
@@ -183,8 +141,6 @@ public abstract class DeviceImpl extends EObjectImpl implements Device {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case MediaLibraryPackage.DEVICE__NAME:
-				return getName();
 			case MediaLibraryPackage.DEVICE__HOST_OF:
 				return getHostOf();
 			case MediaLibraryPackage.DEVICE__COLLECTIONS:
@@ -202,9 +158,6 @@ public abstract class DeviceImpl extends EObjectImpl implements Device {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case MediaLibraryPackage.DEVICE__NAME:
-				setName((String)newValue);
-				return;
 			case MediaLibraryPackage.DEVICE__HOST_OF:
 				getHostOf().clear();
 				getHostOf().addAll((Collection<? extends MediaCollection>)newValue);
@@ -225,9 +178,6 @@ public abstract class DeviceImpl extends EObjectImpl implements Device {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case MediaLibraryPackage.DEVICE__NAME:
-				setName(NAME_EDEFAULT);
-				return;
 			case MediaLibraryPackage.DEVICE__HOST_OF:
 				getHostOf().clear();
 				return;
@@ -246,30 +196,12 @@ public abstract class DeviceImpl extends EObjectImpl implements Device {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case MediaLibraryPackage.DEVICE__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case MediaLibraryPackage.DEVICE__HOST_OF:
 				return hostOf != null && !hostOf.isEmpty();
 			case MediaLibraryPackage.DEVICE__COLLECTIONS:
 				return collections != null && !collections.isEmpty();
 		}
 		return super.eIsSet(featureID);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String toString() {
-		if (eIsProxy()) return super.toString();
-
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(')');
-		return result.toString();
 	}
 
 } //DeviceImpl

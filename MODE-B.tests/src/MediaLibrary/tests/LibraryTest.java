@@ -15,15 +15,7 @@ import junit.textui.TestRunner;
  * <!-- end-user-doc -->
  * @generated
  */
-public class LibraryTest extends TestCase {
-
-	/**
-	 * The fixture for this Library test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Library fixture = null;
+public class LibraryTest extends NamedElementTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -45,23 +37,14 @@ public class LibraryTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Library test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Library fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Library test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Library getFixture() {
-		return fixture;
+		return (Library)fixture;
 	}
 
 	/**

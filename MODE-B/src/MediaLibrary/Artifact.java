@@ -12,7 +12,6 @@ import org.eclipse.emf.ecore.EObject;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link MediaLibrary.Artifact#getName <em>Name</em>}</li>
  *   <li>{@link MediaLibrary.Artifact#getOrigin <em>Origin</em>}</li>
  * </ul>
  * </p>
@@ -22,33 +21,7 @@ import org.eclipse.emf.ecore.EObject;
  *        annotation="gmf.node label='name'"
  * @generated
  */
-public interface Artifact extends EObject {
-	/**
-	 * Returns the value of the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Name</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Name</em>' attribute.
-	 * @see #setName(String)
-	 * @see MediaLibrary.MediaLibraryPackage#getArtifact_Name()
-	 * @model
-	 * @generated
-	 */
-	String getName();
-
-	/**
-	 * Sets the value of the '{@link MediaLibrary.Artifact#getName <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Name</em>' attribute.
-	 * @see #getName()
-	 * @generated
-	 */
-	void setName(String value);
-
+public interface Artifact extends NamedElement {
 	/**
 	 * Returns the value of the '<em><b>Origin</b></em>' reference.
 	 * It is bidirectional and its opposite is '{@link MediaLibrary.MediaSource#getContents <em>Contents</em>}'.

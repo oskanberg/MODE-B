@@ -37,11 +37,11 @@ context NamedElement {
 }
 
 context Artifact {	
-	//constraint HasOrigin {
-	//	guard: self.satisfies("HasName")
-	//	check: self.origin.isDefined()
-	//	message: self.name + " must come from somewhere"
-	//}
+	constraint HasOrigin {
+		guard: self.satisfies("HasName")
+		check: self.origin.isDefined()
+		message: self.name + " must come from somewhere"
+	}
 	
 	constraint NameStartsWithUppercase {
 		guard: self.satisfies("HasName")
@@ -53,9 +53,9 @@ context Artifact {
 context EReader {
 	critique AudioCompatibility {
 		// if audio is enabled, don't care
-		guard: not self.audioEnabled
+		guard: self.audioEnabled.isDefined() and not self.audioEnabled
 		check: self.getCollectionsRequiringAudio().size() == 0
-		message: "EReader " + self + " does not have audio capacity, but collection requires it. If device is host of one, change the host of the collection."
+		message: "EReader " + self + " does not have audio capacity, but a collection requires it. If device is host of one, change the host of the collection."
 		fix {
 			guard: not self.collections.exists(i | i.host == self)
 			title: "Remove the offending collection(s) from device"
@@ -67,9 +67,9 @@ context EReader {
 	
 	critique VideoCompatibility {
 		// if video is enabled, don't care
-		guard: not self.videoEnabled
+		guard: self.audioEnabled.isDefined() and not self.videoEnabled
 		check: self.getCollectionsRequiringVideo().size() == 0
-		message: "EReader " + self + " does not have video capacity, but collection requires it. If device is host of one, change the host of the collection."
+		message: "EReader " + self + " does not have video capacity, but a collection requires it. If device is host of one, change the host of the collection."
 		fix {
 			guard: not self.collections.exists(i | i.host == self)
 			title: "Remove the offending collection(s) from device"

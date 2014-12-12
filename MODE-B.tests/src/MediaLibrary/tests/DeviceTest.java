@@ -12,15 +12,7 @@ import junit.framework.TestCase;
  * <!-- end-user-doc -->
  * @generated
  */
-public abstract class DeviceTest extends TestCase {
-
-	/**
-	 * The fixture for this Device test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Device fixture = null;
+public abstract class DeviceTest extends NamedElementTest {
 
 	/**
 	 * Constructs a new Device test case with the given name.
@@ -33,23 +25,14 @@ public abstract class DeviceTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Device test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Device fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Device test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Device getFixture() {
-		return fixture;
+		return (Device)fixture;
 	}
 
 } //DeviceTest
