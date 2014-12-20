@@ -1,0 +1,17 @@
+
+
+
+operation Artifact getType() : String {
+	if (self.isTypeOf(MusicTrack)) {
+		return "MusicTrack";
+	} else if (self.isTypeOf(AudioBook)) {
+		return "AudioBook";
+	} else if (self.isTypeOf(Video)) {
+		return "Video";
+	} else if (self.isTypeOf(Image)) {
+		return "Image";
+	} else if (self.isTypeOf(Ebook)) {
+		return "Ebook";
+	}
+	return "Unknown";
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ASCII"?>
+<MediaLibrary:Ecosystem xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:MediaLibrary="MediaLibrary">
+  <libraries name="L1">
+    <collections name="My Collection" host="//@devices.0" syncedDevices="//@devices.0 //@devices.1">
+      <members xsi:type="MediaLibrary:Video" name="V1" origin="//@mediaSources.0"/>
+      <members xsi:type="MediaLibrary:Image" name="V1" origin="//@mediaSources.0"/>
+      <members xsi:type="MediaLibrary:Ebook" name="E1" origin="//@mediaSources.0"/>
+      <members xsi:type="MediaLibrary:MusicTrack" name="M1" origin="//@mediaSources.0"/>
+    </collections>
+    <collections name="Collection 2" host="//@devices.1" syncedDevices="//@devices.1 //@devices.0">
+      <members xsi:type="MediaLibrary:MusicTrack" name="Track1" origin="//@mediaSources.0"/>
+      <members xsi:type="MediaLibrary:MusicTrack" name="Track2" origin="//@mediaSources.0"/>
+      <members xsi:type="MediaLibrary:MusicTrack" name="Track3" origin="//@mediaSources.0"/>
+    </collections>
+    <collections name="Smart Collection: Short Videos">
+      <members xsi:type="MediaLibrary:Video" name="V1" origin="//@mediaSources.0"/>
+    </collections>
+  </libraries>
+  <devices xsi:type="MediaLibrary:Tablet" name="My Tablet" hostOf="//@libraries.0/@collections.0" collections="//@libraries.0/@collections.1 //@libraries.0/@collections.0"/>
+  <devices xsi:type="MediaLibrary:EReader" name="My E-Reader" hostOf="//@libraries.0/@collections.1" collections="//@libraries.0/@collections.1 //@libraries.0/@collections.0" videoEnabled="true" audioEnabled="true"/>
+  <mediaSources xsi:type="MediaLibrary:Store" name="iTunes" contents="//@libraries.0/@collections.0/@members.3 //@libraries.0/@collections.0/@members.2 //@libraries.0/@collections.0/@members.1 //@libraries.0/@collections.0/@members.0 //@libraries.0/@collections.1/@members.2 //@libraries.0/@collections.1/@members.1 //@libraries.0/@collections.1/@members.0 //@libraries.0/@collections.2/@members.0"/>
+</MediaLibrary:Ecosystem>

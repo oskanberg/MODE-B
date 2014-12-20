@@ -1,0 +1,15 @@
+pre {
+  "Running ETL".println();
+}
+
+rule CopyAllButEbook
+transform t : MediaLibrary!MediaCollection to n : MediaLibrary!MediaCollection {
+	n.name = t.name;
+	//for (member in t.members) {
+	//	if (member.getType() <> "Ebook") {
+	//		n.members.add(member);
+	//	}
+	//}
+	n.host = t.host;
+	n.syncedDevices = t.syncedDevices;	  
+}

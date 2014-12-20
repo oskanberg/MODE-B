@@ -1,0 +1,13 @@
+
+for (collection in MediaCollection.all) {
+	collection.removeEbooks();
+}
+
+operation MediaCollection removeEbooks() : Boolean {
+	for (artifact in self.members) {
+		if (artifact.isTypeOf(Ebook)) {
+			"Removing audiobook".println()
+			self.members.remove(artifact);
+		}
+	}
+}

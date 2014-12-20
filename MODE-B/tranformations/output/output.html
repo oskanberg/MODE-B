@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>MediaLibrary</title>
+	<script type="text/javascript">
+		function show(id) {
+			var allElements = document.getElementsByClassName('detail');
+			var element = document.getElementById(id);
+			for (var i = 0; i < allElements.length; i++) {
+				allElements[i].style.display = "none";
+			}
+			element.style.display = "block";
+		}
+	</script>
+	<style type="text/css">
+		table, th, td {
+		    border: 1px solid black;
+		    border-collapse: collapse;
+		    padding: 3px;
+		}
+		
+		tr.header {
+			background: black;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+<div id="overlook">
+	<table>
+		<tr class="header">
+			<td>Name</td>
+			<td>Number of Artifacts</td>
+			<td>Total Duration</td>
+		</tr>
+		<tr>
+			<td><a href="#" onclick="show('My Collection')">My Collection</a></td>
+			<td>4</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td><a href="#" onclick="show('Collection 2')">Collection 2</a></td>
+			<td>3</td>
+			<td>0</td>
+		</tr>
+	</table>
+</div>
+<div id="My Collection" class="detail" style="display:none">
+		<h3>Artifacts</h3>
+		<table>
+		<tr class="header">
+			<td>Name</td>
+			<td>Type</td>
+			<td>Origin</td>
+		</tr>
+		<tr>
+			<td>V1</td>
+			<td>Video</td>
+			<td>iTunes</td>
+		</tr>
+		<tr>
+			<td>V1</td>
+			<td>Image</td>
+			<td>iTunes</td>
+		</tr>
+		<tr>
+			<td>E1</td>
+			<td>Ebook</td>
+			<td>iTunes</td>
+		</tr>
+		<tr>
+			<td>M1</td>
+			<td>MusicTrack</td>
+			<td>iTunes</td>
+		</tr>
+	</table>
+</div>
+<div id="Collection 2" class="detail" style="display:none">
+		<h3>Artifacts</h3>
+		<table>
+		<tr class="header">
+			<td>Name</td>
+			<td>Type</td>
+			<td>Origin</td>
+		</tr>
+		<tr>
+			<td>Track1</td>
+			<td>MusicTrack</td>
+			<td>iTunes</td>
+		</tr>
+		<tr>
+			<td>Track2</td>
+			<td>MusicTrack</td>
+			<td>iTunes</td>
+		</tr>
+		<tr>
+			<td>Track3</td>
+			<td>MusicTrack</td>
+			<td>iTunes</td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>
+

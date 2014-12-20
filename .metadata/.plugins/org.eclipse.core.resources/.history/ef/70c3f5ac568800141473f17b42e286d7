@@ -1,0 +1,105 @@
+[% 
+%]
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>MediaLibrary</title>
+	<script type="text/javascript">
+		function show(id) {
+			var allElements = document.getElementsByClassName('detail');
+			var element = document.getElementById(id);
+			for (var i = 0; i < allElements.length; i++) {
+				allElements[i].style.display = "none";
+			}
+			element.style.display = "block";
+		}
+	</script>
+	<style type="text/css">
+		table, th, td {
+		    border: 1px solid black;
+		    border-collapse: collapse;
+		    padding: 3px;
+		}
+		
+		tr.header {
+			background: black;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+<div id="overlook">
+	<table>
+		<tr class="header">
+			<td>Name</td>
+			<td>Number of Artifacts</td>
+			<td>Total Duration</td>
+		</tr>
+	[%
+		var lib = Library.all.first();
+		for (collection in lib.collections) {%]
+		<tr>
+			<td><a href="#" onclick="show('[%=collection.name%]')">[%=collection.name%]</a></td>
+			<td>[%=collection.members.size()%]</td>
+			<td>[%=collection.getTotalSongDuration()%]</td>
+		</tr>
+		[%}
+	%]
+	</table>
+</div>
+[%
+var lib = Library.all.first();
+for (collection in lib.collections) {%]
+<div id="[%=collection.name%]" class="detail" style="display:none">
+		<h3>Artifacts</h3>
+		<table>
+		<tr class="header">
+			<td>Name</td>
+			<td>Type</td>
+			<td>Origin</td>
+		</tr>
+		[%for (artifact in collection.members) {%]
+		<tr>
+			<td>[%=artifact.name%]</td>
+			<td>[%=artifact.getType()%]</td>
+			<td>[%=artifact.origin.name%]</td>
+		</tr>
+		[%}%]
+	</table>
+</div>
+[%} %]
+</body>
+</html>
+
+[%
+operation MediaCollection getTotalSongDuration() : Integer {
+	
+	// collect all MusicTracks from all collections
+	// not sure if this is idiomatic - could also use a loop and add to new collection
+	var songs = self.members.flatten().collect(i : MusicTrack| i);
+	
+	var totalDuration : Integer = 0;
+	// songs is a collection of collections, flatten it
+	for (song in songs) {
+		totalDuration = totalDuration + song.duration;
+	}
+	// totalDuration now represents aggregated len of all songs (even duplicates)
+	return totalDuration;
+}
+
+operation Artifact getType() : String {
+	if (self.isTypeOf(MusicTrack)) {
+		return "MusicTrack";
+	} else if (self.isTypeOf(AudioBook)) {
+		return "AudioBook";
+	} else if (self.isTypeOf(Video)) {
+		return "Video";
+	} else if (self.isTypeOf(Image)) {
+		return "Image";
+	} else if (self.isTypeOf(Ebook)) {
+		return "Ebook";
+	}
+	return "Unknown";
+}
+%]

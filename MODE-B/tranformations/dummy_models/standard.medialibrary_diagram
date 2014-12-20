@@ -8,27 +8,27 @@
         <children xmi:type="notation:BasicCompartment" xmi:id="_S6ZokIhHEeS0zMIVxRC1Mw" type="7002">
           <children xmi:type="notation:Shape" xmi:id="_e3UtkIhHEeS0zMIVxRC1Mw" type="3004" fontName="Segoe UI">
             <children xmi:type="notation:DecorationNode" xmi:id="_e3UtkohHEeS0zMIVxRC1Mw" type="5009"/>
-            <element xmi:type="MediaLibrary:Video" href="default.medialibrary#//@libraries.0/@collections.0/@members.0"/>
+            <element xmi:type="MediaLibrary:Video" href="standard.medialibrary#//@libraries.0/@collections.0/@members.0"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_e3UtkYhHEeS0zMIVxRC1Mw" x="10" y="13"/>
           </children>
           <children xmi:type="notation:Shape" xmi:id="_gzb08IhHEeS0zMIVxRC1Mw" type="3005" fontName="Segoe UI">
             <children xmi:type="notation:DecorationNode" xmi:id="_gzccAIhHEeS0zMIVxRC1Mw" type="5010"/>
-            <element xmi:type="MediaLibrary:Image" href="default.medialibrary#//@libraries.0/@collections.0/@members.1"/>
+            <element xmi:type="MediaLibrary:Image" href="standard.medialibrary#//@libraries.0/@collections.0/@members.1"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gzb08YhHEeS0zMIVxRC1Mw" x="65" y="13"/>
           </children>
           <children xmi:type="notation:Shape" xmi:id="_hZSUAIhHEeS0zMIVxRC1Mw" type="3006" fontName="Segoe UI">
             <children xmi:type="notation:DecorationNode" xmi:id="_hZSUAohHEeS0zMIVxRC1Mw" type="5011"/>
-            <element xmi:type="MediaLibrary:Ebook" href="default.medialibrary#//@libraries.0/@collections.0/@members.2"/>
+            <element xmi:type="MediaLibrary:Ebook" href="standard.medialibrary#//@libraries.0/@collections.0/@members.2"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hZSUAYhHEeS0zMIVxRC1Mw" x="125" y="13"/>
           </children>
           <children xmi:type="notation:Shape" xmi:id="_ieyjgIhHEeS0zMIVxRC1Mw" type="3003" fontName="Segoe UI">
             <children xmi:type="notation:DecorationNode" xmi:id="_ieyjgohHEeS0zMIVxRC1Mw" type="5008"/>
-            <element xmi:type="MediaLibrary:MusicTrack" href="default.medialibrary#//@libraries.0/@collections.0/@members.3"/>
+            <element xmi:type="MediaLibrary:MusicTrack" href="standard.medialibrary#//@libraries.0/@collections.0/@members.3"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ieyjgYhHEeS0zMIVxRC1Mw" x="19" y="71"/>
           </children>
         </children>
         <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_S6ZBgYhHEeS0zMIVxRC1Mw"/>
-        <element xmi:type="MediaLibrary:MediaCollection" href="default.medialibrary#//@libraries.0/@collections.0"/>
+        <element xmi:type="MediaLibrary:MediaCollection" href="standard.medialibrary#//@libraries.0/@collections.0"/>
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_S6ZBgohHEeS0zMIVxRC1Mw" y="8" width="206" height="301"/>
       </children>
       <children xmi:type="notation:Shape" xmi:id="_Q2jsEIhIEeS0zMIVxRC1Mw" type="3001" fontName="Segoe UI">
@@ -36,46 +36,46 @@
         <children xmi:type="notation:BasicCompartment" xmi:id="_Q2tdEYhIEeS0zMIVxRC1Mw" type="7002">
           <children xmi:type="notation:Shape" xmi:id="_UVQnkIhIEeS0zMIVxRC1Mw" type="3003" fontName="Segoe UI">
             <children xmi:type="notation:DecorationNode" xmi:id="_UVQnkohIEeS0zMIVxRC1Mw" type="5008"/>
-            <element xmi:type="MediaLibrary:MusicTrack" href="default.medialibrary#//@libraries.0/@collections.1/@members.0"/>
+            <element xmi:type="MediaLibrary:MusicTrack" href="standard.medialibrary#//@libraries.0/@collections.1/@members.0"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UVQnkYhIEeS0zMIVxRC1Mw" x="21" y="23"/>
           </children>
           <children xmi:type="notation:Shape" xmi:id="_UtCOYIhIEeS0zMIVxRC1Mw" type="3003" fontName="Segoe UI">
             <children xmi:type="notation:DecorationNode" xmi:id="_UtCOYohIEeS0zMIVxRC1Mw" type="5008"/>
-            <element xmi:type="MediaLibrary:MusicTrack" href="default.medialibrary#//@libraries.0/@collections.1/@members.1"/>
+            <element xmi:type="MediaLibrary:MusicTrack" href="standard.medialibrary#//@libraries.0/@collections.1/@members.1"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UtCOYYhIEeS0zMIVxRC1Mw" x="20" y="73"/>
           </children>
           <children xmi:type="notation:Shape" xmi:id="_VEIfwIhIEeS0zMIVxRC1Mw" type="3003" fontName="Segoe UI">
             <children xmi:type="notation:DecorationNode" xmi:id="_VEIfwohIEeS0zMIVxRC1Mw" type="5008"/>
-            <element xmi:type="MediaLibrary:MusicTrack" href="default.medialibrary#//@libraries.0/@collections.1/@members.2"/>
+            <element xmi:type="MediaLibrary:MusicTrack" href="standard.medialibrary#//@libraries.0/@collections.1/@members.2"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VEIfwYhIEeS0zMIVxRC1Mw" x="20" y="122"/>
           </children>
         </children>
         <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_Q2jsEYhIEeS0zMIVxRC1Mw"/>
-        <element xmi:type="MediaLibrary:MediaCollection" href="default.medialibrary#//@libraries.0/@collections.1"/>
+        <element xmi:type="MediaLibrary:MediaCollection" href="standard.medialibrary#//@libraries.0/@collections.1"/>
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Q2jsEohIEeS0zMIVxRC1Mw" x="215" y="8" width="151" height="301"/>
       </children>
     </children>
     <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_SdNWQYhHEeS0zMIVxRC1Mw"/>
-    <element xmi:type="MediaLibrary:Library" href="default.medialibrary#//@libraries.0"/>
+    <element xmi:type="MediaLibrary:Library" href="standard.medialibrary#//@libraries.0"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SdNWQohHEeS0zMIVxRC1Mw" x="35" y="25" width="401" height="381"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="_jQS48IhHEeS0zMIVxRC1Mw" type="2001" fontName="Segoe UI">
     <children xmi:type="notation:DecorationNode" xmi:id="_jQTgAIhHEeS0zMIVxRC1Mw" type="5001"/>
-    <element xmi:type="MediaLibrary:Tablet" href="default.medialibrary#//@devices.0"/>
+    <element xmi:type="MediaLibrary:Tablet" href="standard.medialibrary#//@devices.0"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jQS48YhHEeS0zMIVxRC1Mw" x="758" y="130"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="_kAg08IhHEeS0zMIVxRC1Mw" type="2004" fontName="Segoe UI">
     <children xmi:type="notation:DecorationNode" xmi:id="_kAhcAIhHEeS0zMIVxRC1Mw" type="5004"/>
-    <element xmi:type="MediaLibrary:EReader" href="default.medialibrary#//@devices.1"/>
+    <element xmi:type="MediaLibrary:EReader" href="standard.medialibrary#//@devices.1"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kAg08YhHEeS0zMIVxRC1Mw" x="760" y="205"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="_17oWsIhHEeS0zMIVxRC1Mw" type="2006" fontName="Segoe UI">
     <children xmi:type="notation:DecorationNode" xmi:id="_17oWsohHEeS0zMIVxRC1Mw" type="5006"/>
-    <element xmi:type="MediaLibrary:Store" href="default.medialibrary#//@mediaSources.0"/>
+    <element xmi:type="MediaLibrary:Store" href="standard.medialibrary#//@mediaSources.0"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_17oWsYhHEeS0zMIVxRC1Mw" x="180" y="425"/>
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_PWsRQYhHEeS0zMIVxRC1Mw"/>
-  <element xmi:type="MediaLibrary:Ecosystem" href="default.medialibrary#/"/>
+  <element xmi:type="MediaLibrary:Ecosystem" href="standard.medialibrary#/"/>
   <edges xmi:type="notation:Edge" xmi:id="_qHFxoIhHEeS0zMIVxRC1Mw" type="4001" source="_S6ZBgIhHEeS0zMIVxRC1Mw" target="_jQS48IhHEeS0zMIVxRC1Mw">
     <children xmi:type="notation:DecorationNode" xmi:id="_qHG_wIhHEeS0zMIVxRC1Mw" type="6001">
       <styles xmi:type="notation:DescriptionStyle" xmi:id="_qHHm0IhHEeS0zMIVxRC1Mw"/>

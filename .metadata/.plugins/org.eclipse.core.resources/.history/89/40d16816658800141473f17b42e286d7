@@ -1,0 +1,92 @@
+rule Ecosystem
+  transform s : source!Ecosystem
+  to t : target!Ecosystem {
+  	t.libraries ::= s.libraries;
+  	t.devices ::= s.devices;
+  	t.mediaSources ::= s.mediaSources;
+}
+
+rule Library
+  transform s : source!Library
+  to t : target!Library {
+  	t.collections ::= s.collections;
+  	t.name := s.name;
+}
+
+rule MediaCollection
+  transform s : source!MediaCollection
+  to t : target!MediaCollection {
+  	t.members ::= s.members;
+  	t.host ::= s.host;
+  	t.syncedDevices ::= s.syncedDevices;
+}
+
+rule Tablet
+  transform s : source!Tablet
+  to t : target!Tablet {
+  	t.hostOf ::= s.hostOf;
+  	t.collections ::= s.collections;
+}
+
+rule Computer
+  transform s : source!Computer
+  to t : target!Computer {
+  	t.hostOf ::= s.hostOf;
+  	t.collections ::= s.collections;
+}
+
+rule Smartphone
+  transform s : source!Smartphone
+  to t : target!Smartphone {
+  	t.hostOf ::= s.hostOf;
+  	t.collections ::= s.collections;
+}
+
+rule EReader
+  transform s : source!EReader
+  to t : target!EReader {
+  	t.hostOf ::= s.hostOf;
+  	t.collections ::= s.collections;
+  	t.videoEnabled := s.videoEnabled;
+  	t.audioEnabled := s.audioEnabled;
+}
+
+rule AudioBook
+  transform s : source!AudioBook
+  to t : target!AudioBook {
+  	s.origin ::= t.origin;
+  	s.duration := t.duration;
+}
+
+rule MusicTrack
+  transform s : source!MusicTrack
+  to t : target!MusicTrack {
+  	s.origin ::= t.origin;
+  	s.duration := t.duration;
+}
+
+rule Video
+  transform s : source!Video
+  to t : target!Video {
+  	s.origin ::= t.origin;
+  	s.duration := t.duration;
+}
+
+rule Image
+  transform s : source!Image
+  to t : target!Image {
+  	s.origin ::= t.origin;
+}
+
+rule Ebook
+  transform s : source!Ebook
+  to t : target!Ebook {
+  	s.origin ::= t.origin;
+}
+
+rule ExternalSource
+  transform s : source!ExternalSource
+  to t : target!ExternalSource {
+  	s.contents ::= t.contents;
+  	s.sourceType := t.sourceType;
+}

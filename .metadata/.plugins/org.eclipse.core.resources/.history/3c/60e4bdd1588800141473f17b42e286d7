@@ -1,0 +1,5 @@
+
+MediaCollection.all.removeEbooks();
+
+operation MediaCollection removeEbooks() : Void {
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ASCII"?>
+<MediaLibrary:Ecosystem xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:MediaLibrary="MediaLibrary">
+  <libraries name="L1">
+    <collections name="My Collection" host="//@devices.0" syncedDevices="//@devices.0 //@devices.1"/>
+    <collections name="Collection 2" host="//@devices.1" syncedDevices="//@devices.1 //@devices.0"/>
+  </libraries>
+  <devices xsi:type="MediaLibrary:Tablet" name="My Tablet" hostOf="//@libraries.0/@collections.0" collections="//@libraries.0/@collections.1 //@libraries.0/@collections.0"/>
+  <devices xsi:type="MediaLibrary:EReader" name="My E-Reader" hostOf="//@libraries.0/@collections.1" collections="//@libraries.0/@collections.1 //@libraries.0/@collections.0" videoEnabled="true" audioEnabled="true"/>
+  <mediaSources xsi:type="MediaLibrary:Store" name="iTunes"/>
+</MediaLibrary:Ecosystem>

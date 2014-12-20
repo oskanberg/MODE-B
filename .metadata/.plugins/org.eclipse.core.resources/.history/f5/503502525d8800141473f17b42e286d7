@@ -1,0 +1,10 @@
+
+MediaCollection.all.removeEbooks();
+
+operation MediaCollection removeEbooks() : Boolean {
+	for (artifact in self.members) {
+		if (artifact.isTypeOf(Ebook)) {
+			self.members.remove(artifact);
+		}
+	}
+}
