@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MediaLibrary:Ecosystem xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:MediaLibrary="MediaLibrary">
-  <libraries name="Library">
-    <collections name="My Collection" host="//@devices.2" syncedDevices="//@devices.2 //@devices.1 //@devices.0">
+  <libraries name="">
+    <collections name="" host="//@devices.2" syncedDevices="//@devices.2 //@devices.1 //@devices.0">
       <members xsi:type="MediaLibrary:Image" origin="//@mediaSources.0"/>
-      <members xsi:type="MediaLibrary:MusicTrack" origin="//@mediaSources.1"/>
+      <members xsi:type="MediaLibrary:MusicTrack" origin="//@mediaSources.1" duration="-1"/>
       <members xsi:type="MediaLibrary:AudioBook" origin="//@mediaSources.1"/>
       <members xsi:type="MediaLibrary:Ebook" origin="//@mediaSources.0"/>
     </collections>
