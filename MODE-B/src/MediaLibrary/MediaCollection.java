@@ -21,7 +21,7 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  *
  * @see MediaLibrary.MediaLibraryPackage#getMediaCollection()
- * @model annotation="gmf.node label='name'"
+ * @model
  * @generated
  */
 public interface MediaCollection extends NamedElement {

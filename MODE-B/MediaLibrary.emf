@@ -2,6 +2,7 @@
 
 package MediaLibrary;
 
+@gmf.node(label="name")
 abstract class NamedElement {
 	attr String name;
 }
@@ -13,13 +14,12 @@ class Ecosystem {
 	val MediaSource[1..*] mediaSources;
 }
 
-@gmf.node(label="name")
+
 class Library extends NamedElement {
 	@gmf.compartment
 	val MediaCollection[*] collections;
 }
 
-@gmf.node(label="name")
 class MediaCollection extends NamedElement {
 	@gmf.compartment
 	val Artifact[1..*] members;
@@ -31,7 +31,6 @@ class MediaCollection extends NamedElement {
 
 /***** Devices ****/
 
-@gmf.node(label="name")
 abstract class Device extends NamedElement {
 	ref MediaCollection[*]#host hostOf;
 	ref MediaCollection[*]#syncedDevices collections;
@@ -51,7 +50,6 @@ class EReader extends Device {
 /***** Media Artifacts ****/
 
 // all media types inherit artifact
-@gmf.node(label="name")
 abstract class Artifact extends NamedElement {
 	@gmf.link(target.decoration="arrow", style="dot", color="50,200,0", label.text="origin")
 	ref MediaSource[1]#contents origin;
@@ -81,7 +79,6 @@ class Ebook extends Artifact {
 /***** Media Sources ****/
 
 // all sources inherit MediaSource
-@gmf.node(label="name")
 abstract class MediaSource extends NamedElement {
 	ref Artifact[*]#origin contents;
 }

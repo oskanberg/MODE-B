@@ -2,7 +2,7 @@
 <MediaLibrary:Ecosystem xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:MediaLibrary="MediaLibrary">
   <libraries name="My Library">
     <collections name="My Collection" host="//@devices.0" syncedDevices="//@devices.1">
-      <members xsi:type="MediaLibrary:Video" name="2001: A Space Odyssey" origin="//@mediaSources.0"/>
+      <members xsi:type="MediaLibrary:Video" name="2001: A Space Odyssey" origin="//@mediaSources.0" duration="1"/>
     </collections>
   </libraries>
   <devices xsi:type="MediaLibrary:Tablet" name="My Tablet" hostOf="//@libraries.0/@collections.0"/>

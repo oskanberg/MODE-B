@@ -21,7 +21,6 @@ import org.eclipse.emf.ecore.EObject;
  *
  * @see MediaLibrary.MediaLibraryPackage#getDevice()
  * @model abstract="true"
- *        annotation="gmf.node label='name'"
  * @generated
  */
 public interface Device extends NamedElement {

@@ -18,6 +18,7 @@ import org.eclipse.emf.ecore.EObject;
  *
  * @see MediaLibrary.MediaLibraryPackage#getNamedElement()
  * @model abstract="true"
+ *        annotation="gmf.node label='name'"
  * @generated
  */
 public interface NamedElement extends EObject {

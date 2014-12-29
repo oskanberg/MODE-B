@@ -18,7 +18,6 @@ import org.eclipse.emf.ecore.EObject;
  *
  * @see MediaLibrary.MediaLibraryPackage#getArtifact()
  * @model abstract="true"
- *        annotation="gmf.node label='name'"
  * @generated
  */
 public interface Artifact extends NamedElement {

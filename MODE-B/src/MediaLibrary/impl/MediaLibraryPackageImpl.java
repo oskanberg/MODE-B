@@ -765,9 +765,9 @@ public class MediaLibraryPackageImpl extends EPackageImpl implements MediaLibrar
 		createResource(eNS_URI);
 
 		// Create annotations
-		// gmf.diagram
-		createGmfAnnotations();
 		// gmf.node
+		createGmfAnnotations();
+		// gmf.diagram
 		createGmf_1Annotations();
 		// gmf.compartment
 		createGmf_2Annotations();
@@ -776,57 +776,33 @@ public class MediaLibraryPackageImpl extends EPackageImpl implements MediaLibrar
 	}
 
 	/**
-	 * Initializes the annotations for <b>gmf.diagram</b>.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void createGmfAnnotations() {
-		String source = "gmf.diagram";	
-		addAnnotation
-		  (ecosystemEClass, 
-		   source, 
-		   new String[] {
-		   });
-	}
-
-	/**
 	 * Initializes the annotations for <b>gmf.node</b>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createGmf_1Annotations() {
+	protected void createGmfAnnotations() {
 		String source = "gmf.node";	
 		addAnnotation
-		  (libraryEClass, 
+		  (namedElementEClass, 
 		   source, 
 		   new String[] {
 			 "label", "name"
-		   });	
+		   });
+	}
+
+	/**
+	 * Initializes the annotations for <b>gmf.diagram</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createGmf_1Annotations() {
+		String source = "gmf.diagram";	
 		addAnnotation
-		  (mediaCollectionEClass, 
+		  (ecosystemEClass, 
 		   source, 
 		   new String[] {
-			 "label", "name"
-		   });	
-		addAnnotation
-		  (deviceEClass, 
-		   source, 
-		   new String[] {
-			 "label", "name"
-		   });	
-		addAnnotation
-		  (artifactEClass, 
-		   source, 
-		   new String[] {
-			 "label", "name"
-		   });	
-		addAnnotation
-		  (mediaSourceEClass, 
-		   source, 
-		   new String[] {
-			 "label", "name"
 		   });
 	}
 

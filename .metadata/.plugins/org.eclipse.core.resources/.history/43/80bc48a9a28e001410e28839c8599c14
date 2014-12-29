@@ -36,6 +36,14 @@ context NamedElement {
 	}
 }
 
+context DurationArtifact {
+	constraint NonZeroDuration {
+		guard: self.duration.isDefined() and self.satisfies("HasName")
+		check: self.duration > 0
+		message: self.name + " must have a non-zero duration"
+	}
+}
+
 context Artifact {	
 	constraint HasOrigin {
 		guard: self.satisfies("HasName")

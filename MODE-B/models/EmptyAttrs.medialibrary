@@ -3,8 +3,8 @@
   <libraries name="">
     <collections name="" host="//@devices.2" syncedDevices="//@devices.2 //@devices.1 //@devices.0">
       <members xsi:type="MediaLibrary:Image" origin="//@mediaSources.0"/>
-      <members xsi:type="MediaLibrary:MusicTrack" origin="//@mediaSources.1" duration="-1"/>
-      <members xsi:type="MediaLibrary:AudioBook" origin="//@mediaSources.1"/>
+      <members xsi:type="MediaLibrary:MusicTrack" name="" origin="//@mediaSources.1" duration="-1"/>
+      <members xsi:type="MediaLibrary:AudioBook" origin="//@mediaSources.1" duration="-1"/>
       <members xsi:type="MediaLibrary:Ebook" origin="//@mediaSources.0"/>
     </collections>
   </libraries>
@@ -12,6 +12,6 @@
   <devices xsi:type="MediaLibrary:Tablet" collections="//@libraries.0/@collections.0"/>
   <devices xsi:type="MediaLibrary:Computer" hostOf="//@libraries.0/@collections.0" collections="//@libraries.0/@collections.0"/>
   <devices xsi:type="MediaLibrary:EReader"/>
-  <mediaSources xsi:type="MediaLibrary:ExternalSource" name="DVD" contents="//@libraries.0/@collections.0/@members.0 //@libraries.0/@collections.0/@members.3"/>
-  <mediaSources xsi:type="MediaLibrary:Store" name="iTunes" contents="//@libraries.0/@collections.0/@members.2 //@libraries.0/@collections.0/@members.1"/>
+  <mediaSources xsi:type="MediaLibrary:ExternalSource" name="" contents="//@libraries.0/@collections.0/@members.0 //@libraries.0/@collections.0/@members.3"/>
+  <mediaSources xsi:type="MediaLibrary:Store" name="" contents="//@libraries.0/@collections.0/@members.2 //@libraries.0/@collections.0/@members.1"/>
 </MediaLibrary:Ecosystem>
